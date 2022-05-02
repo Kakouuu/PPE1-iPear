@@ -11,6 +11,7 @@
 <?php
 
 require_once("db.php");
+
 ?>
 
 <nav class="navbar" style="height: 50px !important;">
@@ -43,7 +44,7 @@ require_once("db.php");
                 <li><a href="pagelegume.php?id=Légume Tubercules" title="" class="type_sous">Légumes tubercules</a></li>
                 <li><a href="pagelegume.php?id=Légume Tige" title="" class="type_sous">Légumes tiges</a></li>
             </ul>
-        <li><a href="/" class="type">A propos</a></li>
+        <li><a href="test.php" class="type">A propos</a></li>
     </ul>
 
 
