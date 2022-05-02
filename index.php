@@ -6,7 +6,6 @@
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
 
     <title>YouPoire</title>
-
 </head>
 <body>
 
@@ -15,62 +14,98 @@ include "nav.php";
 ?>
 
 
+<br>
 <div class="slideshow-container">
 
-    <div class="mySlides fade">
-        <img src="img/fl.png" style="height:300px" class="centrer">
-        <div class="text"></div>
+
+    <div class="box" >
+        <button onclick="backward()" class="click"><</button>
+        <img src="img/legover.jpg" style="height:500px; width: 100%;" class="centrer">
+
+        <div class="slog">Découvrez notre selection de légumes frais!</div>
+        <button class="test">Voir les produits</button>
+        <button onclick="forward()" class="click">></button>
     </div>
 
-    <div class="mySlides fade">
-        <img src="img/poire.jpg" style="height:300px" class="centrer">
-        <div class="text"></div>
+    <div class="box2">
+        <button onclick="backward()" class="click"><</button>
+        <img src="img/bannière.jpg" style="height:500px; width: 100%;" class="centrer">
+
+        <div class="slog2"> A consommer sans moodération :)</div>
+        <button onclick="forward()" class="click">></button>
     </div>
 
-    <div class="mySlides fade">
-        <img src="img/poire.png" style="height:300px" class="centrer">
-        <div class="text"></div>
+
+    <div class="box3">
+        <button onclick="backward()" class="click"><</button>
+        <img src="img/fruitover1.jpg" style="height:500px; width: 100%;" class="centrer">
+
+        <div class="slog">Découvrez notre selection de fruits frais !</div>
+        <button class="test">Voir les produits</button>
+        <button onclick="forward()" class="click">></button>
     </div>
+
 
 </div>
 <br>
 
-<div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-</div>
 
 <script>
+    function forward() {
+        let display = document.querySelector('.box').style.display
+        let display2 = document.querySelector('.box2').style.display
+        let display3 = document.querySelector('.box3').style.display
 
-    let slideIndex = 0;
-    showSlides();
+        if (display2 == 'none' || display2 == '') {
+            document.querySelector(".box2").style.display = "flex";
+            document.querySelector(".box").style.display = "none";
+        } else {
+            document.querySelector(".box3").style.display = "flex";
+            document.querySelector(".box").style.display = "none";
+            document.querySelector(".box2").style.display = "none";
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+
+        if (display3 == 'flex') {
+            document.querySelector('.box3').style.display = 'none';
+            document.querySelector('.box').style.display = 'flex';
+            document.querySelector(".box2").style.display = "none";
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 4000); // Change image every 4 seconds
     }
-</script>
 
+    function backward() {
+
+        let display = document.querySelector('.box').style.display
+        let display2 = document.querySelector('.box2').style.display
+        let display3 = document.querySelector('.box3').style.display
+
+        if (display == 'flex') {
+            document.querySelector('.box3').style.display = 'flex';
+            document.querySelector('.box').style.display = 'none';
+            document.querySelector(".box2").style.display = "none";
+        }
+        if (display3 == 'flex') {
+            document.querySelector('.box3').style.display = 'none';
+            document.querySelector('.box').style.display = 'none';
+            document.querySelector(".box2").style.display = "flex";
+        }
+        if (display2 == 'flex') {
+            document.querySelector(".box3").style.display = "none";
+            document.querySelector(".box").style.display = "flex";
+            document.querySelector(".box2").style.display = "none";
+        }
+    }
+
+    setInterval(function () {
+        forward();
+    }, 5000);
+</script>
 
 
 <hr>
 
 
 <!--MAIN CONTAIN-->
-
 
 
 <br><br><br><br>
