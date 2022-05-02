@@ -1,0 +1,8 @@
+td{
+    border: 1px solid black;
+    border-spacing: 10px;
+}
+
+.title{
+    text-align: left;
+}
