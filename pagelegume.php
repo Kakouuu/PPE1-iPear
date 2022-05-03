@@ -33,21 +33,15 @@ include "nav.php";
 
             <a href="productdetail.php?id=<?php echo $id ?>"><img class="frleg_img" src="<?= $row["Image"]; ?>"></a>
             <div class="frleg_name">
-                <form action="addpanier.php" method="GET">
                     <a href="productdetail.php?id=<?php echo $id ?>"><h1><?php echo $row['Nom']; ?></h1></a>
                     <p class="frleg_provenance">
-                        Provenance : <?= $row["Provenance"]; ?></p>
+                        Provenance : <?= $row["Provenance"]; ?></p><br/>
                     <p class="frleg_achat">
-                        Quantité :  <input class="qte_css" type="number" name="qte" value="1" min = "1" max ="10" /><br/>
-                        Prix: <?= $row["Prix"]; ?> €
-                        <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>"
+                        Prix: <?= $row["Prix"]; ?> € / <?= $row["Quantite"]; ?>
                                <br>
                         <br><br>
-                        ID: <?= $row["ID_FL"]; ?>
                     </p>
-                    <input type="submit" value="Ajouter au panier">
 
-                </form>
 
             </div>
 

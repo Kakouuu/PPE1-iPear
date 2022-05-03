@@ -56,16 +56,18 @@
     align-items: center;
     align-content: center;
     text-align: center;
+    border-radius: 10px;
+    border-color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #26ad63;
 }
 
 .addcart{
     grid-area: panier;
-    border-radius: 10px;
-    width: 200px;
-    height: auto;
-    padding: 15px;
-    margin-top: 10px;
-    background-color: #26ad63;
+    text-align: left;
 }
 
 

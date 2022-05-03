@@ -64,7 +64,7 @@ require_once("db.php");
 
 
 
-            <a href="/" class="item"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="test.php" class="item"><i class="fa-solid fa-basket-shopping"></i></a>
 
             <a href="login.php" class="log">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
 
