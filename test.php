@@ -1,3 +1,14 @@
+<?php
+require_once "db.php";
+session_start();
+if(!isset($_SESSION['ID'])){
+    header("Location:login.php");
+}
+
+$sql = "select panier.quantite,fruitslegumes.Nom,fruitslegumes.Prix, fruitslegumes.Image from panier INNER JOIN fruitslegumes ON panier.ID_FL = fruitslegumes.ID_FL WHERE panier.ID_user='".$_SESSION["ID"]."'";
+$result = mysqli_query($mysqli, $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +29,8 @@ include('nav.php')
 <h1 style="border-bottom : 1px solid black; padding-bottom:8px;">Panier</h1>
 <br>
 
+
+
     <div class="all">
         <div class="header">
 
@@ -31,22 +44,26 @@ include('nav.php')
             </div>
         </div>
 <hr>
-
+        <?php
+        while ($row = mysqli_fetch_array($result)){
+        ?>
         <div class="produits">
             <div style="display : flex;align-items : center;">
-            <div class="imgprod"></div> 
-            Pomme de terre charlotte</div>
+            <img class="imgprod" src="<?= $row["Image"]; ?>">
+            <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
                 <div><input id="number" type="number" value="1" min="1"></div>
-                <div class="PU">12€</div>
+                <div class="PU"><?= $row["Prix"]; ?>€</div>
                 <div class="toto">12€</div>
                 <div class="trash">Poubelle</div>
                  
             </div>
 
         </div>
-
+            <?php
+        }
+        ?>
         
     </div>
 

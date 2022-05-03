@@ -15,6 +15,17 @@ require_once "db.php";
 <div class="title">
     <h1>Votre panier</h1>
 </div>
+
+<?php
+
+$idleg = $_GET['id'];
+
+$sql = "select * from fruitslegumes where ID_FL = " . $idleg;
+$result = mysqli_query($mysqli, $sql);
+$row = mysqli_fetch_array($result);
+
+?>
+
 <div class="tab">
     <form action="traitementpanier.php" method="post">
         <table>
@@ -27,10 +38,11 @@ require_once "db.php";
             </tr>
             </thead>
             <tr>
-                <td><?php $row['Nom']; ?></td>
-                <td><?php echo $Description; ?></td>
-                <td><?php echo $Quantite; ?></td>
-                <td><?php echo $Prix; ?></td>
+                <td><?php echo $row['Nom']; ?>
+                    <img class="img_prod" src="<?= $row["Image"]; ?>">
+                </td>
+                <td><?php echo $row["Quantite"]; ?></td>
+                <td><?php echo $row["Prix"]; ?></td>
             </tr>
         </table>
 </div>

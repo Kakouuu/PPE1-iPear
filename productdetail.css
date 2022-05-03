@@ -24,9 +24,22 @@
 .prix_part{
     grid-area: prix;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 
 }
+
+.qte_part{
+    grid-area: qte;
+    text-align: left;
+    width: 40px;
+}
+
+.qte_incr{
+    grid-area: qteincr;
+    text-align: left;
+    display: flex;
+}
+
 .quantite{
     font-size: 15px;
     color: black;
@@ -54,7 +67,6 @@
     margin-top: 10px;
     background-color: #26ad63;
 }
-
 
 
 .spec_part{
@@ -93,6 +105,8 @@
     grid-template-areas:
     'nom'
     'prix'
+    'qte'
+    'qteincr'
     'description'
     'spec'
     'panier';
@@ -114,4 +128,9 @@
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+}
+
+.product {
+    width: 30%;
+    margin: 30px;
 }

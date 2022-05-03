@@ -25,7 +25,7 @@ $row = mysqli_fetch_array($result);
         <img class="img_product" src="<?= $row["Image"]; ?>">
     </div>
 
-    <!-- INFORMATION PRODUIT -->
+
     <div class="grid_info_prod">
 
         <div class="nom_part">
@@ -36,10 +36,24 @@ $row = mysqli_fetch_array($result);
             <span class="prix"><?= $row["Prix"];?> € </span><span class="quantite"> / <?= $row["Quantite"];?> </span>
         </span>
 
+        <div class="qte_part">
+            <h3><span class="title_info"> Quantité</h3>
+        </div>
+        <div class="qte_incr">
+            <div class="input-group-btn">
+                <button id="down" class="btn btn-default" onclick=" down('1')"><span class="glyphicon glyphicon-minus">-</span></button>
+            </div>
+            <input type="text" id="myNumber" class="qte_css"  style="width: 150px" value="1" />
+            <div class="input-group-btn">
+                <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus">+</span></button>
+            </div>
+        </div>
+
+
         <div class="spec_part">
             <div>
                 <b>Provenance : </b><?= $row["Provenance"]?>
-
+                <br>
                 <br>
             </div>
         </div>
@@ -51,7 +65,8 @@ $row = mysqli_fetch_array($result);
             <p class="description_prod"><?= $row["Conservation"]?></p>
         </div>
         <div class="addcart">
-            <a href="#" class="add_to_cart"> <i class="fas fa-shopping-cart"></i> Ajouter au panier </a>
+            <a href="addpanier.php" class="add_to_cart"> <i class="fas fa-shopping-cart"></i> Ajouter au panier </a>
+            <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>"
         </div>
     </div>
 </div>
@@ -64,3 +79,19 @@ $row = mysqli_fetch_array($result);
     <?php
     include "footer.php"
     ?>
+
+<script>
+    function up(max) {
+        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+        if (document.getElementById("myNumber").value >= parseInt(max)) {
+            document.getElementById("myNumber").value = max;
+        }
+    }
+    function down(min) {
+        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+        if (document.getElementById("myNumber").value <= parseInt(min)) {
+            document.getElementById("myNumber").value = min;
+        }
+    }
+
+</script>
