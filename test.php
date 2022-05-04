@@ -5,9 +5,22 @@ if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
 
-$sql = "select panier.quantite,fruitslegumes.Nom,fruitslegumes.Prix, fruitslegumes.Image from panier INNER JOIN fruitslegumes ON panier.ID_FL = fruitslegumes.ID_FL WHERE panier.ID_user='".$_SESSION["ID"]."'";
+$sql = "select fruitslegumes.ID_FL, panier.quantite,fruitslegumes.Nom,fruitslegumes.Prix, fruitslegumes.Image from panier INNER JOIN fruitslegumes ON panier.ID_FL = fruitslegumes.ID_FL WHERE panier.ID_user='".$_SESSION["ID"]."'";
 $result = mysqli_query($mysqli, $sql);
 ?>
+
+
+
+
+<?php
+if(isset($_POST['idprod'])){
+    echo $_POST['idprod'];
+}
+
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +28,7 @@ $result = mysqli_query($mysqli, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
 </head>
@@ -56,8 +70,12 @@ include('nav.php')
                 <div><input id="number" type="number" value="1" min="1"></div>
                 <div class="PU"><?= $row["Prix"]; ?>€</div>
                 <div class="toto">12€</div>
-                <div class="trash">Poubelle</div>
-                 
+                <div class="trash">
+                    <form action="test.php" method="POST">
+                    <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
+                        <button type="submit" name="suppr"><i class="fa-solid fa-trash-can"></i></button>
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -75,8 +93,28 @@ include('nav.php')
             <a href="index.php"><div class="retour">Retour à l'accueil</div></a>
                 <div class="commande">Paiement</div>
         </div>
-
+        
 </div>
+
+<?php 
+$sql = "SELECT * FROM `fruitslegumes` WHERE ID_FL;";
+$result = mysqli_query($mysqli, $sql);
+
+
+
+
+// $id = $row["ID_FL"];
+var_dump($result);
+
+if(isset($_POST['suppr'])){
+
+    $s = $_POST['suppr'];
+    
+    $sql = 'DELETE FROM panier WHERE ID_FL =' .$id .';';
+    $result = mysqli_query($mysqli, $sql);
+}
+
+?>
 
 
 </body>

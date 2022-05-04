@@ -40,7 +40,7 @@ include "nav.php";
                     <p class="frleg_achat">
                         Quantité :  <input class="qte_css" type="number" name="qte" value="1" min = "1" max ="10" /><br/>
                         Prix: <?= $row["Prix"]; ?> €
-                        <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>"
+                        <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
                                <br>
                         <br><br>
                         ID: <?= $row["ID_FL"]; ?>
