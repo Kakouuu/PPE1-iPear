@@ -34,11 +34,11 @@
 .produits{
     display: flex;
     justify-content: space-between;
-    background-color: brown;
+    background-color: white;
 }
 
 .imgprod{
-    background-color: blue;
+    background-color: white;
     height: 100px;
     width: 100px;
     margin-right: 13px;

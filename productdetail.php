@@ -1,8 +1,8 @@
 <?php
-    require_once "db.php"
+require_once "db.php"
 ?>
 
-<link rel="stylesheet" href="productdetail.css">
+<link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
 
 <body>
 <?php
@@ -25,15 +25,14 @@ $row = mysqli_fetch_array($result);
         <img class="img_product" src="<?= $row["Image"]; ?>">
     </div>
 
-
     <div class="grid_info_prod">
 
         <div class="nom_part">
-            <h2 class="nom"><?=$row["Nom"];?></h2>
+            <h2 class="nom"><?= $row["Nom"]; ?></h2>
         </div>
 
         <span class="prix_part">
-            <span class="prix"><?= $row["Prix"];?> € </span><span class="quantite"> / <?= $row["Quantite"];?> </span>
+            <span class="prix"><?= $row["Prix"]; ?> € </span><span class="quantite"> / <?= $row["Quantite"]; ?> </span>
         </span>
 
         <div class="qte_part">
@@ -42,38 +41,40 @@ $row = mysqli_fetch_array($result);
         <div class="qte_incr">
             <form action="addpanier.php" method="GET" style="display: flex">
 
-                    <div class="input-group-btn">
-                        <button id="down" class="btn btn-default" onclick=" down('1')"><span class="glyphicon glyphicon-minus">-</span></button>
-                    </div>
-
-                    <input type="text" name="qteprod" id="myNumber" class="qte_css"  style="width: 150px" value="1" />
-
-                    <div class="input-group-btn">
-                        <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus">+</span></button>
-                    </div>
+                <div class="input-group-btn">
+                    <div id="down" class="btn btn-default" onclick=" down('1')"><span
+                                class="glyphicon glyphicon-minus">-</span></div>
                 </div>
 
+                <input type="text" name="qteprod" id="myNumber" class="qte_css" style="width: 150px" value="1"/>
 
-                <div class="spec_part">
-                    <div>
-                        <b>Provenance : </b><?= $row["Provenance"]?> <br/><br/>
-                    </div>
+                <div class="input-group-btn">
+                    <div id="up" class="btn btn-default" onclick="up('10')"><span
+                                class="glyphicon glyphicon-plus">+</span></div>
                 </div>
-
-                <div class="desc_part">
-                    <h3 class="title_info">Description</h3>
-                    <p class="description_prod"><?= $row["Description"]?></p>
-                    <h3 class="title_info">Conservation</h3>
-                    <p class="description_prod"><?= $row["Conservation"]?></p>
-                </div>
+        </div>
 
 
-
-                <div class="addcart">
-                    <button class="add_to_cart"> <i class="fas fa-shopping-cart"></i> Ajouter au panier </button>
-                    <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>"/>
-
+        <div class="spec_part">
+            <div>
+                <b>Provenance : </b><?= $row["Provenance"] ?> <br/><br/>
             </div>
+        </div>
+
+        <div class="desc_part">
+            <h3 class="title_info">Description</h3>
+            <p class="description_prod"><?= $row["Description"] ?></p>
+            <h3 class="title_info">Conservation</h3>
+            <p class="description_prod"><?= $row["Conservation"] ?></p>
+        </div>
+
+
+        <div class="addcart">
+            <button class="add_to_cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+            <input type="hidden" name="idprod" value="<?= $row['ID_FL']; ?>"/>
+
+        </div>
+        </form>
     </div>
 </div>
 </div>
@@ -82,9 +83,9 @@ $row = mysqli_fetch_array($result);
 </body>
 
 
-    <?php
-    include "footer.php"
-    ?>
+<?php
+include "footer.php"
+?>
 
 <script>
     function up(max) {
@@ -93,6 +94,7 @@ $row = mysqli_fetch_array($result);
             document.getElementById("myNumber").value = max;
         }
     }
+
     function down(min) {
         document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
         if (document.getElementById("myNumber").value <= parseInt(min)) {

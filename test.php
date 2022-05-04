@@ -53,7 +53,7 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-                <div><input id="number" type="number" value="1" min="1"></div>
+                <div><input id="number" type="number" value="<?= $row['quantite']; ?>" min="1"></div>
                 <div class="PU"><?= $row["Prix"]; ?>€</div>
                 <div class="toto">12€</div>
                 <div class="trash">Poubelle</div>
@@ -61,6 +61,7 @@ include('nav.php')
             </div>
 
         </div>
+            <hr>
             <?php
         }
         ?>
