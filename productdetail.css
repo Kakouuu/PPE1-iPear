@@ -56,16 +56,18 @@
     align-items: center;
     align-content: center;
     text-align: center;
+    border-radius: 10px;
+    border-color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #26ad63;
 }
 
 .addcart{
     grid-area: panier;
-    border-radius: 10px;
-    width: 200px;
-    height: auto;
-    padding: 15px;
-    margin-top: 10px;
-    background-color: #26ad63;
+    text-align: left;
 }
 
 
@@ -133,4 +135,22 @@
 .product {
     width: 30%;
     margin: 30px;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #26ad63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+.btn:hover{
+    opacity: 1;
 }

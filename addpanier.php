@@ -5,11 +5,11 @@ if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
 
-$sql = "INSERT INTO panier (ID_user,ID_FL,quantite) VALUES ('".$_SESSION["ID"]."',
-$result = mysqli_query($mysqli, $sql);
 
+if(isset($_GET['idprod'],$_GET['qteprod'])){
+    $sql = "INSERT INTO panier (ID_user,ID_FL,quantite) VALUES ('".$_SESSION['ID']."','".$_GET['idprod']."','".$_GET['qteprod']."')";
+    $result = mysqli_query($mysqli, $sql);
+}
 
 
 ?>
-
-
