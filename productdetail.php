@@ -3,13 +3,34 @@ require_once "db.php"
 ?>
 
 <link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="popup.css">
 
 <body>
 <?php
 include "nav.php"
 ?>
+<?php 
+if(isset($_GET['valid'])){
+
+
+
+
+?>
+ <div class="cover" onclick="aplus(this)">
+    <div class="popup" >
+        Article ajouté <img src="img\check.png" alt="SALUT" style="width: 35px; margin-left: 20px;">
+    </div>
+</div>
+    <script>
+       function aplus(element){
+           console.log(element);
+        element.style.opacity = '0';
+        element.addEventListener('transitionend', () => element.remove());
+       }
+    </script>
 
 <?php
+}
 
 $idleg = $_GET['id'];
 

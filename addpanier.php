@@ -11,5 +11,4 @@ if(isset($_GET['idprod'],$_GET['qteprod'])){
     $result = mysqli_query($mysqli, $sql);
 }
 
-
 ?>
