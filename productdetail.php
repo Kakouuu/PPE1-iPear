@@ -10,7 +10,7 @@ require_once "db.php"
 include "nav.php"
 ?>
 <?php 
-if(isset($_GET['valid'])){
+if(isset($_GET['valid']) && $_GET['valid'] = 1){
 
 
 
