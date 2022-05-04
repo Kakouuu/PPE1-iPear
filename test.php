@@ -15,6 +15,10 @@ $result = mysqli_query($mysqli, $sql);
 <?php
 if(isset($_POST['idprod'])){
     echo $_POST['idprod'];
+    $sql = 'DELETE FROM panier WHERE ID_FL =' . $_POST['idprod'];
+   
+    echo $sql;
+
 }
 
 
@@ -59,7 +63,7 @@ include('nav.php')
         </div>
 <hr>
         <?php
-        while ($row = mysqli_fetch_array($result)){
+        while ($row = mysqli_fetch_array($result)){         
         ?>
         <div class="produits">
             <div style="display : flex;align-items : center;">
@@ -97,24 +101,6 @@ include('nav.php')
         
 </div>
 
-<?php 
-$sql = "SELECT * FROM `fruitslegumes` WHERE ID_FL;";
-$result = mysqli_query($mysqli, $sql);
-
-
-
-
-// $id = $row["ID_FL"];
-
-if(isset($_POST['suppr'])){
-
-    $s = $_POST['suppr'];
-    
-    $sql = 'DELETE FROM panier WHERE ID_FL =.$id .';
-    $result = mysqli_query($mysqli, $sql);
-}
-
-?>
 
 
 </body>
