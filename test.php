@@ -105,13 +105,12 @@ $result = mysqli_query($mysqli, $sql);
 
 
 // $id = $row["ID_FL"];
-var_dump($result);
 
 if(isset($_POST['suppr'])){
 
     $s = $_POST['suppr'];
     
-    $sql = 'DELETE FROM panier WHERE ID_FL =' .$id .';';
+    $sql = 'DELETE FROM panier WHERE ID_FL =.$id .';
     $result = mysqli_query($mysqli, $sql);
 }
 
