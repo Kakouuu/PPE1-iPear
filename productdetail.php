@@ -1,5 +1,6 @@
 <?php
-require_once "db.php"
+require_once "db.php";
+session_start();
 ?>
 
 <link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
@@ -10,7 +11,7 @@ require_once "db.php"
 include "nav.php"
 ?>
 <?php 
-if(isset($_GET['valid']) && $_GET['valid'] = 1){
+if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
 
 
 
@@ -26,10 +27,12 @@ if(isset($_GET['valid']) && $_GET['valid'] = 1){
            console.log(element);
         element.style.opacity = '0';
         element.addEventListener('transitionend', () => element.remove());
+        
        }
     </script>
 
 <?php
+$_SESSION['valid'] = 0;
 }
 
 $idleg = $_GET['id'];
