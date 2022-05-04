@@ -14,13 +14,16 @@ $result = mysqli_query($mysqli, $sql);
 
 <?php
 if(isset($_POST['idprod'])){
-    echo $_POST['idprod'];
-    $sql = 'DELETE FROM panier WHERE ID_FL =' . $_POST['idprod'];
-   
+
+    
+
+    $sql = 'DELETE FROM `panier` WHERE ID_FL =' . $_POST['idprod'] .' and ID_user =' . $_SESSION['ID'];
+    mysqli_query($mysqli, $sql);
+    header("Location: test.php");
     echo $sql;
-
+   
 }
-
+    
 
 ?>
 
