@@ -9,9 +9,6 @@ $sql = "select fruitslegumes.ID_FL, panier.quantite,fruitslegumes.Nom,fruitslegu
 $result = mysqli_query($mysqli, $sql);
 ?>
 
-
-
-
 <?php
 if(isset($_POST['idprod'])){
 
@@ -20,10 +17,8 @@ if(isset($_POST['idprod'])){
     $sql = 'DELETE FROM `panier` WHERE ID_FL =' . $_POST['idprod'] .' and ID_user =' . $_SESSION['ID'];
     mysqli_query($mysqli, $sql);
     header("Location: test.php");
-    echo $sql;
    
 }
-    
 
 ?>
 
@@ -39,11 +34,13 @@ if(isset($_POST['idprod'])){
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
 </head>
-<body>
+<body onload="number()">
 
 <?php
 include('nav.php')
 ?>
+
+
 <br> <br><br>
 <div style="margin-left : 100px; margin-right : 100px;">
 
@@ -66,6 +63,8 @@ include('nav.php')
         </div>
 <hr>
         <?php
+        $a = 0;
+
         while ($row = mysqli_fetch_array($result)){         
         ?>
         <div class="produits">
@@ -74,9 +73,9 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-                <div><input id="number" type="number" value="<?= $row['quantite']; ?>" min="1"></div>
-                <div class="PU"><?= $row["Prix"]; ?>€</div>
-                <div class="toto">12€</div>
+                <div><input id="number" type="number" onchange="number()" value="<?= $row['quantite']; ?>" min="1"></div>
+                <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?>€</div>
+                <div class="toto"></div>
                 <div class="trash">
                     <form action="test.php" method="POST">
                     <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
@@ -103,24 +102,18 @@ include('nav.php')
         </div>
         
 </div>
+<script>
+    function number(){
+        var calcul = document.getElementById("number").value;
+        var prix = document.getElementsByClassName("PU")[0].id;
+        var result = calcul * prix;
+        document.getElementsByClassName("toto")[0].innerHTML = result;
+    }
 
+
+</script>
 
 
 </body>
-<script>
-    function up(max) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-        if (document.getElementById("myNumber").value >= parseInt(max)) {
-            document.getElementById("myNumber").value = max;
-        }
-    }
-    function down(min) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-        if (document.getElementById("myNumber").value <= parseInt(min)) {
-            document.getElementById("myNumber").value = min;
-        }
-    }
-
-</script>
 </html>
 
