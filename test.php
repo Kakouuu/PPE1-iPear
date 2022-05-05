@@ -72,9 +72,15 @@ include('nav.php')
             <img class="imgprod" src="<?= $row["Image"]; ?>">
             <?= $row["Nom"]; ?></div>
 
+
+
             <div class="header_sous">
-                <div><input id="number" type="number" onchange="number()" value="<?= $row['quantite']; ?>" min="1"></div>
-                <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?>€</div>
+                <div><input id="number" type="number" onchange="number()" value="<?= $row['quantite']; ?>" min="1">
+                <?php
+                $sql = 'UPDATE panier SET quantite = '.$row['quantite'].' WHERE ID_user = '.$_SESSION['ID'].' and ID_FL = '.$row['ID_FL'];
+                ?>
+                </div>
+                <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
                 <div class="toto"></div>
                 <div class="trash">
                     <form action="test.php" method="POST">
@@ -106,8 +112,9 @@ include('nav.php')
     function number(){
         var calcul = document.getElementById("number").value;
         var prix = document.getElementsByClassName("PU")[0].id;
-        var result = calcul * prix;
-        document.getElementsByClassName("toto")[0].innerHTML = result;
+        var result = (calcul * prix).toFixed(2);
+
+        document.getElementsByClassName("toto")[0].innerHTML = result + " €";
     }
 
 
