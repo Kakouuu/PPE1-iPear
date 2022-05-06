@@ -33,8 +33,18 @@ if(isset($_POST['idprod'])){
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
+    <script>
+        function number(id){
+            var calcul = document.getElementsByName('change')[id].value;
+            var prix = document.getElementsByClassName("PU")[id].id;
+            var result = (calcul * prix).toFixed(2);
+            document.getElementsByClassName("toto")[id].innerHTML = result + " €";
+        }
+
+
+    </script>
 </head>
-<body onload="number()">
+<body>
 
 <?php
 include('nav.php')
@@ -62,26 +72,25 @@ include('nav.php')
             </div>
         </div>
 <hr>
+
         <?php
         $a = 0;
 
-        while ($row = mysqli_fetch_array($result)){         
+        while ($row = mysqli_fetch_array($result)){
         ?>
         <div class="produits">
             <div style="display : flex;align-items : center;">
             <img class="imgprod" src="<?= $row["Image"]; ?>">
             <?= $row["Nom"]; ?></div>
 
-
-
             <div class="header_sous">
-                <div><input id="number" type="number" onchange="number()" value="<?= $row['quantite']; ?>" min="1">
+                <div><input id="<?=$row['ID_FL'];?>" name="change" type="number" onchange="number(<?=$a?>)" value="<?= $row['quantite']; ?>" min="1">
                 <?php
-                $sql = 'UPDATE panier SET quantite = '.$row['quantite'].' WHERE ID_user = '.$_SESSION['ID'].' and ID_FL = '.$row['ID_FL'];
+                //$sql = 'UPDATE panier SET quantite = '.$row['quantite'].' WHERE ID_user = '.$_SESSION['ID'].' and ID_FL = '.$row['ID_FL'];
                 ?>
                 </div>
                 <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
-                <div class="toto"></div>
+                <div class="toto"><?= $row['quantite']*$row["Prix"] ?> €</div>
                 <div class="trash">
                     <form action="test.php" method="POST">
                     <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
@@ -89,7 +98,9 @@ include('nav.php')
                     </form>
                 </div>
             </div>
-
+            <?php
+            $a += 1;
+            ?>
         </div>
             <hr>
             <?php
@@ -108,17 +119,7 @@ include('nav.php')
         </div>
         
 </div>
-<script>
-    function number(){
-        var calcul = document.getElementById("number").value;
-        var prix = document.getElementsByClassName("PU")[0].id;
-        var result = (calcul * prix).toFixed(2);
 
-        document.getElementsByClassName("toto")[0].innerHTML = result + " €";
-    }
-
-
-</script>
 
 
 </body>

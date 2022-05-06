@@ -111,7 +111,6 @@ require_once("db.php");
         }
 
 
-console.log(clientHeight);
 
 
     </script>
