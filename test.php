@@ -9,9 +9,6 @@ $sql = "select fruitslegumes.ID_FL, panier.quantite,fruitslegumes.Nom,fruitslegu
 $result = mysqli_query($mysqli, $sql);
 ?>
 
-
-
-
 <?php
 if(isset($_POST['idprod'])){
 
@@ -19,9 +16,9 @@ if(isset($_POST['idprod'])){
 
     $sql = 'DELETE FROM `panier` WHERE ID_FL =' . $_POST['idprod'] .' and ID_user =' . $_SESSION['ID'];
     mysqli_query($mysqli, $sql);
-    header("Location: test.php");   
+    header("Location: test.php");
+   
 }
-    
 
 ?>
 
@@ -36,12 +33,24 @@ if(isset($_POST['idprod'])){
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
+    <script>
+        function number(id){
+            var calcul = document.getElementsByName('change')[id].value;
+            var prix = document.getElementsByClassName("PU")[id].id;
+            var result = (calcul * prix).toFixed(2);
+            document.getElementsByClassName("toto")[id].innerHTML = result + " €";
+        }
+
+
+    </script>
 </head>
 <body>
 
 <?php
 include('nav.php')
 ?>
+
+
 <br> <br><br>
 <div style="margin-left : 100px; margin-right : 100px;">
 
@@ -63,8 +72,11 @@ include('nav.php')
             </div>
         </div>
 <hr>
+
         <?php
-        while ($row = mysqli_fetch_array($result)){         
+        $a = 0;
+
+        while ($row = mysqli_fetch_array($result)){
         ?>
         <div class="produits">
             <div style="display : flex;align-items : center;">
@@ -72,9 +84,13 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-                <div><input class="inpute" id="number" type="number" value="<?= $row['quantite']; ?>" min="1"></div>
-                <div class="PU"><?= $row["Prix"]; ?>€</div>
-                <div class="toto">12€</div>
+                <div><input id="<?=$row['ID_FL'];?>" name="change" type="number" onchange="number(<?=$a?>)" value="<?= $row['quantite']; ?>" min="1">
+                <?php
+                //$sql = 'UPDATE panier SET quantite = '.$row['quantite'].' WHERE ID_user = '.$_SESSION['ID'].' and ID_FL = '.$row['ID_FL'];
+                ?>
+                </div>
+                <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
+                <div class="toto"><?= $row['quantite']*$row["Prix"] ?> €</div>
                 <div class="trash">
                     <form action="test.php" method="POST">
                     <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
@@ -82,7 +98,9 @@ include('nav.php')
                     </form>
                 </div>
             </div>
-
+            <?php
+            $a += 1;
+            ?>
         </div>
             <hr>
             <?php
@@ -105,20 +123,5 @@ include('nav.php')
 <br>
 
 </body>
-<script>
-    function up(max) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-        if (document.getElementById("myNumber").value >= parseInt(max)) {
-            document.getElementById("myNumber").value = max;
-        }
-    }
-    function down(min) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-        if (document.getElementById("myNumber").value <= parseInt(min)) {
-            document.getElementById("myNumber").value = min;
-        }
-    }
-
-</script>
 </html>
 

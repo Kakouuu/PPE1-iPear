@@ -12,9 +12,7 @@ include "nav.php"
 ?>
 <?php 
 if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
-
-
-
+    
 
 ?>
  <div class="cover" onclick="aplus(this)">
