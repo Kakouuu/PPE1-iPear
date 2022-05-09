@@ -24,9 +24,9 @@ $mdp = $_POST["Mdp"];
 $mail = addslashes($mail);
 $mdp = addslashes($mdp);
 
-$sql = "SELECT * FROM utilisateurs WHERE Mail = '" . $mail . "'";
-$result = $mysqli->query($sql);
-$res = mysqli_num_rows($result);
+    $sql = "SELECT * FROM utilisateurs WHERE Mail = '" . $mail . "'";
+    $result = $mysqli->query($sql);
+    $res = mysqli_num_rows($result);
 
 if ($res == 1)
 {

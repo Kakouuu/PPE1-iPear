@@ -65,7 +65,7 @@ body {
     top: 32px;
     left: -250px;
     width: 100%;
-// max-height: 0px;
+ max-height: 0px;
     /* Pour cacher le sou menu */
     overflow: hidden;
     /* Pour cacher le contenu du sous menu */
@@ -461,6 +461,10 @@ body {
     top: 0;
 }
 
+.box, .box2, .box3{
+    margin: 0%;
+}
+
 .box{
     display : flex;
 }
@@ -473,8 +477,8 @@ body {
 }
 
 .click{
-    position: relative;
-    background-color: transparent;
+    position: absolute;
+    background-color: red;
     border: none;
     text-decoration: none;
     color: black;
@@ -482,12 +486,13 @@ body {
     height: 300px;
     font-size: 1.05rem;
     font-weight: 300;
-    opacity: 0.7;
     cursor: pointer;
 }
 
 .click2{
-    background-color: transparent;
+    position: absolute;
+    left: 97%;
+    background-color: red;
     border: none;
     text-decoration: none;
     color: black;
@@ -495,14 +500,9 @@ body {
     height: 300px;
     font-size: 1.05rem;
     font-weight: 300;
-    opacity: 0.7;
     cursor: pointer;
 }
 
-.click:hover{
-    opacity: 1;
-    background-color: #ececec;
-}
 
 /* Main content */
 
@@ -674,6 +674,13 @@ body {
     letter-spacing: .7px;
     font-family: Arial;
 }
+
+@media screen and (max-width: 1050px) {
+    .frlegs{
+        display : block;
+    }
+}
+
 
 
 

@@ -19,9 +19,7 @@ if(isset($_POST['idprod'])){
 
     $sql = 'DELETE FROM `panier` WHERE ID_FL =' . $_POST['idprod'] .' and ID_user =' . $_SESSION['ID'];
     mysqli_query($mysqli, $sql);
-    header("Location: test.php");
-    echo $sql;
-   
+    header("Location: test.php");   
 }
     
 
@@ -74,7 +72,7 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-                <div><input id="number" type="number" value="<?= $row['quantite']; ?>" min="1"></div>
+                <div><input class="inpute" id="number" type="number" value="<?= $row['quantite']; ?>" min="1"></div>
                 <div class="PU"><?= $row["Prix"]; ?>€</div>
                 <div class="toto">12€</div>
                 <div class="trash">
@@ -104,7 +102,7 @@ include('nav.php')
         
 </div>
 
-
+<br>
 
 </body>
 <script>

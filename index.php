@@ -14,17 +14,18 @@ include "nav.php";
 ?>
 
 
-<br>
+
 <div class="slideshow-container">
 
 
     <div class="box" >
         <button onclick="backward()" class="click"><</button>
         <img src="img/legover.jpg" style="height:500px; width: 100%;" class="centrer">
-
+        
+        
         <div class="slog">Découvrez notre selection de légumes frais!</div>
         <button class="test">Voir les produits</button>
-        <button onclick="forward()" class="click">></button>
+        <button onclick="forward()" class="click2">></button>
     </div>
 
     <div class="box2">
@@ -32,7 +33,7 @@ include "nav.php";
         <img src="img/bannière.jpg" style="height:500px; width: 100%;" class="centrer">
 
         <div class="slog2"> A consommer sans moodération :)</div>
-        <button onclick="forward()" class="click">></button>
+        <button onclick="forward()" class="click2">></button>
     </div>
 
 
@@ -42,7 +43,7 @@ include "nav.php";
 
         <div class="slog">Découvrez notre selection de fruits frais !</div>
         <button class="test">Voir les produits</button>
-        <button onclick="forward()" class="click">></button>
+        <button onclick="forward()" class="click2">></button>
     </div>
 
 

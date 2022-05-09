@@ -137,6 +137,12 @@
     margin: 30px;
 }
 
+@media screen and (max-width: 980px) {
+    .grid-container_product{
+        display : block !important;
+    }
+}
+
 .btn{
     cursor: pointer;
     margin: 5px;
