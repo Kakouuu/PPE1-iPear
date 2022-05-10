@@ -51,6 +51,11 @@
     padding: 5px;
     background-color: lightblue;
     width: 150px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -94,3 +99,27 @@
         align-items: center;
     }
 }
+
+.btn{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: #50C878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.qteprod{
+    width: 150px;
+    height: 30px;
+}
+

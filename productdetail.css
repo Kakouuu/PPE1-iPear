@@ -160,3 +160,8 @@
 .btn:hover{
     opacity: 1;
 }
+
+.qteprod{
+    width: 150px;
+    height: 30px;
+}

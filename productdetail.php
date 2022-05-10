@@ -22,7 +22,6 @@ if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
 </div>
     <script>
        function aplus(element){
-           console.log(element);
         element.style.opacity = '0';
         element.addEventListener('transitionend', () => element.remove());
         
@@ -63,17 +62,14 @@ $row = mysqli_fetch_array($result);
         <div class="qte_incr">
             <form action="addpanier.php" method="GET" style="display: flex">
 
-                <div class="input-group-btn">
-                    <div id="down" class="btn btn-default" onclick=" down('1')"><span
-                                class="glyphicon glyphicon-minus">-</span></div>
-                </div>
+                <select class="qteprod" name="qteprod" id="myNumber">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
 
-                <input type="text" name="qteprod" id="myNumber" class="qte_css" style="width: 150px" value="1"/>
-
-                <div class="input-group-btn">
-                    <div id="up" class="btn btn-default" onclick="up('10')"><span
-                                class="glyphicon glyphicon-plus">+</span></div>
-                </div>
+                </select>
         </div>
 
 
@@ -109,19 +105,4 @@ $row = mysqli_fetch_array($result);
 include "footer.php"
 ?>
 
-<script>
-    function up(max) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-        if (document.getElementById("myNumber").value >= parseInt(max)) {
-            document.getElementById("myNumber").value = max;
-        }
-    }
 
-    function down(min) {
-        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-        if (document.getElementById("myNumber").value <= parseInt(min)) {
-            document.getElementById("myNumber").value = min;
-        }
-    }
-
-</script>

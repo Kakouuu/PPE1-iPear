@@ -33,18 +33,10 @@ if(isset($_POST['idprod'])){
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
-    <script>
-        function number(id){
-            var calcul = document.getElementsByName('change')[id].value;
-            var prix = document.getElementsByClassName("PU")[id].id;
-            var result = (calcul * prix).toFixed(2);
-            document.getElementsByClassName("toto")[id].innerHTML = result + " €";
-        }
 
 
-    </script>
 </head>
-<body>
+<body onload="totalPrice()">
 
 <?php
 include('nav.php')
@@ -84,13 +76,25 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-                <div><input id="<?=$row['ID_FL'];?>" name="change" type="number" onchange="number(<?=$a?>)" value="<?= $row['quantite']; ?>" min="1">
-                <?php
-                //$sql = 'UPDATE panier SET quantite = '.$row['quantite'].' WHERE ID_user = '.$_SESSION['ID'].' and ID_FL = '.$row['ID_FL'];
-                ?>
+
+    <div class="qtepp">
+        <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice()" value="<?= $row['quantite'];?>">
+            <option selected disabled hidden>
+                <?= $row['quantite'];?>
+
+            </option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+
+        </select>
+    </div>
+                <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
+                <div class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?>" >
+                    <?= $row['quantite']*$row["Prix"] ?> €
                 </div>
-                <div class="PU" id="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
-                <div class="toto"><?= $row['quantite']*$row["Prix"] ?> €</div>
                 <div class="trash">
                     <form action="test.php" method="POST">
                     <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
@@ -108,10 +112,7 @@ include('nav.php')
         ?>
         
     </div>
-
-        <div class="total">
-            Prix total : 200,50 €
-        </div>
+        <div class="total" id="totale" name="totalprice"></div>
 <br>
         <div class="bas">
             <a href="index.php"><div class="retour">Retour à l'accueil</div></a>
@@ -124,4 +125,5 @@ include('nav.php')
 
 </body>
 </html>
+
 
