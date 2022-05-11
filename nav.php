@@ -31,7 +31,7 @@ require_once("db.php");
                 <li><a href="pagelegume.php?id=Fruits Rouge" title="" class="type_sous">Baies et fruits rouges</a></li>
                 <li><a href="pagelegume.php?id=Agrume" title="" class="type_sous">Agrumes</a></li>
                 <li><a href="pagelegume.php?id=Fruit à Coque" title="" class="type_sous">Fruits à coque</a></li>
-                <li><a href="pagelegume.php?id=Exotique" title="" class="type_sous">Fruits exotiques</a></li>
+                <li><a href="pagelegume.php?id=Fruit Exotique" title="" class="type_sous">Fruits exotiques</a></li>
             </ul>
         <li class="services"><a href="#" title="" class="type">Légumes</a>
             <ul class="sous-menu">

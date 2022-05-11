@@ -92,9 +92,8 @@ include('nav.php')
         </select>
     </div>
                 <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
-                <div class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?>" >
-                    <?= $row['quantite']*$row["Prix"] ?> €
-                </div>
+                <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
+
                 <div class="trash">
                     <form action="test.php" method="POST">
                     <input type="hidden" name="idprod" value="<?=$row['ID_FL'];?>">
