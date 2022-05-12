@@ -15,8 +15,6 @@ require_once "db.php";
 
 
 <?php
-session_start();
-require_once ("db.php");
 
 $mail = $_POST["Mail"];
 $mdp = $_POST["Mdp"];
