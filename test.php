@@ -69,10 +69,11 @@ include('nav.php')
         $a = 0;
 
         while ($row = mysqli_fetch_array($result)){
+            $id = $row["ID_FL"];
         ?>
         <div class="produits">
             <div style="display : flex;align-items : center;">
-            <img class="imgprod" src="<?= $row["Image"]; ?>">
+                <a href="productdetail.php?id=<?php echo $id ?>"><img class="imgprod" src="<?= $row["Image"]; ?>"></a>
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
@@ -93,6 +94,11 @@ include('nav.php')
     </div>
                 <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
                 <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
+
+
+                <?php
+               // $sql = 'UPDATE `panier` SET quantite = '.$row["quantite"].' WHERE ID_user = '.$_SESSION['ID_user'].' and ID_FL =' . $_POST['idprod'];
+                ?>
 
                 <div class="trash">
                     <form action="test.php" method="POST">

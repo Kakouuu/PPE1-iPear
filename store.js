@@ -10,17 +10,26 @@
 }
 
 
-    function totalPrice(){
+    function totalPrice() {
         var articles = document.getElementsByName('tata')
         var rendu = 0
         var i = 0
         while (i < articles.length) {
-        rendu += parseFloat(articles[i].value)
+            rendu += parseFloat(articles[i].value)
 
-        i++;
-        document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €"
+            i++;
+            document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €"
 
 
+        }
+    }
+
+/*
+    function update(){
+        $.ajax(
+            url: "update.php",
+            type: "POST",
+            data: { 'username': user, 'liked': '1' },
+        success: function()
 }
-
-}
+*/
