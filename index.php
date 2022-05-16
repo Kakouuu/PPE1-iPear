@@ -20,28 +20,36 @@ include "nav.php";
 
     <div class="box" >
         <button onclick="backward()" class="click"><</button>
-        <img src="img/legover.jpg" style="height:500px; width: 100%;" class="centrer">
+        <img src="img/legover.jpg" style="height:450px; width: 100%; border-radius : 30px;" class="centrer">
         
         
-        <div class="slog">Découvrez notre selection de légumes frais!</div>
+        <div class="slog">Découvrez notre <br> selection de légumes frais!</div>
         <button class="test">Voir les produits</button>
         <button onclick="forward()" class="click2">></button>
     </div>
-
+    
     <div class="box2">
+    
         <button onclick="backward()" class="click"><</button>
-        <img src="img/bannière.jpg" style="height:500px; width: 100%;" class="centrer">
+        <img src="img/poire.png" alt="poire" style="position : absolute;">
 
-        <div class="slog2"> A consommer sans moodération :)</div>
+        <div class="slog3">
+            <div class="slog2">GARDE LA POIRE </div>
+            <div class="slog4"> YouPoire, c'est des produits d'exception dans votre assiete !</div>
+            <button class="aprop">A propos</button>
+        </div>
+        
         <button onclick="forward()" class="click2">></button>
+        
     </div>
 
 
     <div class="box3">
         <button onclick="backward()" class="click"><</button>
-        <img src="img/fruitover1.jpg" style="height:500px; width: 100%;" class="centrer">
+        <img src="img/fruitover1.jpg" style="height:450px; width: 100%; border-radius : 30px;" class="centrer">
 
-        <div class="slog">Découvrez notre selection de fruits frais !</div>
+        <div class="slog">Découvrez notre <br> selection de fruits frais !</div>
+   
         <button class="test">Voir les produits</button>
         <button onclick="forward()" class="click2">></button>
     </div>
@@ -103,7 +111,7 @@ include "nav.php";
 </script>
 
 
-<hr>
+
 
 
 <!--MAIN CONTAIN-->

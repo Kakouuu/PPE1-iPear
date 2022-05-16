@@ -115,7 +115,7 @@ include('nav.php')
 <br>
         <div class="bas">
             <a href="index.php"><div class="retour">Retour à l'accueil</div></a>
-                <div class="commande">Paiement</div>
+                <div class="commande">Validation</div>
         </div>
         
 </div>

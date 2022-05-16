@@ -17,7 +17,7 @@ if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
 ?>
  <div class="cover" onclick="aplus(this)">
     <div class="popup" >
-        Article ajouté <img src="img\check.png" alt="SALUT" style="width: 35px; margin-left: 20px;">
+        Article ajouté <img src="img\check.png" alt="" style="width: 35px; margin-left: 20px;">
     </div>
 </div>
     <script>

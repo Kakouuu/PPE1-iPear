@@ -61,19 +61,7 @@ body {
 
 
 
-.sous-menu2 {
-    top: 32px;
-    left: -250px;
-    width: 100%;
- max-height: 0px;
-    /* Pour cacher le sou menu */
-    overflow: hidden;
-    /* Pour cacher le contenu du sous menu */
-    transition: max-height 0.25s ease;
-    /* transition appliquée sur la propriété max-height */
-    padding: 0;
-    margin: 5px;
-}
+
 .type2{
     color: white;
 }
@@ -218,9 +206,7 @@ body {
     color: #fff;
 }
 
-.sous-menu > li:hover {
 
-}
 
 .type_sous {
     opacity: 0.7;
@@ -371,7 +357,7 @@ body {
     width: 200px;
     outline: none;
     position: absolute;
-    background: black;
+    background: rgba(0, 0, 0, 0.747);
     color: white;
     padding: 8px;
     letter-spacing: 3px;
@@ -379,29 +365,58 @@ body {
     align-items: center;
     font-size: 1.1rem;
     bottom: 40%;
-    left: 40%;
-    right: 40%;
+    left: 10%;
+   
 }
 
+
+
 .slog{
-    text-align: center;
-    position : absolute;
-    font-size: 1.5rem;
-    bottom: 65%;
-    left: 20%;
-    right: 20%;
+    text-align: left;
+    position: absolute;
+    font-size: 2.5rem;
+    bottom: 55%;
+    left: 10%;
     letter-spacing: 3px;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 
 }
 
 .slog2{
+    position: relative;
+  
+    font-size: 2.9rem;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    
+}
+.slog3{
+    display: block;
     position: absolute;
-    font-size: 1.5rem;
-    bottom: 65%;
-    left: 23%;
-    letter-spacing: 3px;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    text-align: center;
+    bottom: 32%;
+    left: 48%;
+    color: white;
+  
+    padding: 10px;
+}
+
+.slog3>div{
+    margin: 10px;
+}
+
+.slog4{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.aprop{
+    color : black;
+    background-color: #8fed8fac;
+    border: none;
+    color: black;
+    padding: 7px;
+    font-size: 20px;
 }
 
 /* Slideshow container */
@@ -409,8 +424,10 @@ body {
     max-width: 100%;
 
     position: relative;
-    margin: auto;
+    margin: 30px;
 }
+
+
 
 
 
@@ -470,20 +487,31 @@ body {
 }
 
 .box2{
+    margin-top: 50px;
     display: none;
+    background: black;
+    height:400px;
+    width: 100%;
+    border-radius : 30px;
 }
+
 .box3{
     display: none;
 }
 
 .click{
+    z-index: 500;
     position: absolute;
-    background-color: red;
+    background-color: lightgray;
+    opacity: 0.8;
     border: none;
+    top: 43%;
     text-decoration: none;
     color: black;
-    width: 40px;
-    height: 300px;
+    margin: 5px;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
     font-size: 1.05rem;
     font-weight: 300;
     cursor: pointer;
@@ -491,13 +519,16 @@ body {
 
 .click2{
     position: absolute;
-    left: 97%;
-    background-color: red;
+    left: 94%;
+    top: 43%;
+    background-color: lightgray;
+    opacity: 0.7;
     border: none;
     text-decoration: none;
     color: black;
-    width: 40px;
-    height: 300px;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
     font-size: 1.05rem;
     font-weight: 300;
     cursor: pointer;
