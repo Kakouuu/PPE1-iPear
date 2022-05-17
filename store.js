@@ -23,13 +23,3 @@
 
         }
     }
-
-/*
-    function update(){
-        $.ajax(
-            url: "update.php",
-            type: "POST",
-            data: { 'username': user, 'liked': '1' },
-        success: function()
-}
-*/

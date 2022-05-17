@@ -24,10 +24,10 @@
                 <a href="/" class="item2">Nous contacter</a>
             </li>
             <li class="item2">
-                <a href="/" class="item2">Mentions légales</a>
+                <a href="mentionsLegales.php" class="item2">Mentions légales</a>
             </li>
             <li class="item2">
-                <a href="/" class="item2">Conditions générales de ventes</a>
+                <a href="condiVente.php" class="item2">Conditions générales de ventes</a>
             </li>
             <li class="item2">
                 <a href="confiden.php" class="item2">Politique de confidentialité</a>
