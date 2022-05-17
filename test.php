@@ -1,6 +1,6 @@
 <?php
 require_once "db.php";
-session_start();
+
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
@@ -11,7 +11,6 @@ $result = mysqli_query($mysqli, $sql);
 
 <?php
 if(isset($_POST['idprod'])){
-
     
 
     $sql = 'DELETE FROM `panier` WHERE ID_FL =' . $_POST['idprod'] .' and ID_user =' . $_SESSION['ID'];
