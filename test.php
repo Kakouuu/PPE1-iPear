@@ -1,6 +1,5 @@
 <?php
 require_once "db.php";
-session_start();
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
@@ -34,6 +33,19 @@ if(isset($_POST['idprod'])){
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
 
+
+    <script>
+        //JQuery code
+        $(document).ready(function (){
+            var qteup = 0
+            $("select").click(function (){
+                qteup = qteup + 1;
+                $("qtepp").load("update.php", {
+                    qteupNew : qteup
+                });
+            });
+        });
+    </script>
 
 </head>
 <body onload="totalPrice()">
