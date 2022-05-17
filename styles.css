@@ -790,3 +790,9 @@ a {
 }
 
 
+.welcome{
+    width: 100%;
+    background: #444444; 
+    color: white;
+    padding: 5px;
+}

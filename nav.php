@@ -11,9 +11,23 @@
 </head>
 <?php
 
-require_once("db.php");
+require_once "db.php";
+$sqla = 'SELECT * FROM `utilisateurs` where `ID_user`=' . $_SESSION['ID'];
+$resulta = mysqli_query($mysqli, $sqla);
+
+   while (($row = mysqli_fetch_array($resulta))){
+
+    $prenom = $row["Prenom"];
+   }
+
 
 ?>
+
+
+<div class="welcome">Bonjour <?= $prenom; ?> !</div>
+
+
+
 
 
 

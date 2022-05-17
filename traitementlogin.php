@@ -25,7 +25,6 @@ $mdp = addslashes($mdp);
     $sql = "SELECT * FROM utilisateurs WHERE Mail = '" . $mail . "'";
     $result = $mysqli->query($sql);
     $res = mysqli_num_rows($result);
-
 if ($res == 1)
 {
     $row = mysqli_fetch_array($result);
@@ -33,6 +32,7 @@ if ($res == 1)
     if (password_verify($mdp, $lemdp)) {
         $id = $row["ID_user"];
         $_SESSION['ID'] = $id;
+        $prenom = $row['Prenom'];
         header("location: index.php");
 
 
