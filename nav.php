@@ -28,12 +28,16 @@ if (isset($_SESSION['ID'])) {
 ?>
 
 
+
+
 <div class="welcome">Bonjour <?= $prenom; ?> !</div>
+
+
 
 <?php
 }
-?>
 
+?>
 
 
 
@@ -89,9 +93,24 @@ if (isset($_SESSION['ID'])) {
 
             <a href="test.php" class="item"><i class="fa-solid fa-basket-shopping"></i></a>
 
-            <a href="login.php" class="log">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+            <a href="login.php" class="log" id="co">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+           
+
+            <li class="user"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
+            <ul class="user_sous">
+                <li><a class="user_container" onclick='supprim()' id="cache">Deconnexion</a></li>
+                <li><a href="pagelegume.php?id=Fruits Noyaux" title="" class="user_container">Profil</a></li>
 
     </span>
+
+    <script>
+function supprim() {
+    document.getElementById('cache').value = 1;
+    console.log(document.getElementById('cache').value);
+    window.location.replace("index.php");
+}
+    </script>
+
 
 
     <script>
@@ -171,6 +190,21 @@ if (isset($_SESSION['ID'])) {
         </ul>
 
 </ul>
+
+<?php 
+if(isset($_SESSION['ID'])){
+    ?>
+    <script>
+    document.getElementById('co').style.display = 'none';
+    document.getElementById('profil').style.display = 'block';
+    </script>
+
+<?php
+}
+
+?>
+
+
 
 <script src="app.js"></script>
 

@@ -67,7 +67,7 @@ include('nav.php')
 
 
     <div class="all">
-        <div class="header">
+        <!-- <div class="header">
 
             <div class="nom">Nom du produit</div>
 
@@ -77,8 +77,8 @@ include('nav.php')
                 <div>Total</div>
                 <div>Supprimer le pannier</div>
             </div>
-        </div>
-<hr>
+        </div> -->
+
 
         <?php
         $a = 0;
@@ -130,7 +130,7 @@ include('nav.php')
             $a += 1;
             ?>
         </div>
-            <hr>
+            
             <?php
         }
         ?>
