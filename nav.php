@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE  =edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
 
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

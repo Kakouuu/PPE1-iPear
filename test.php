@@ -30,21 +30,24 @@ if(isset($_POST['idprod'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="test.css">
     <title>Panier</title>
 
 
     <script>
-        //JQuery code
-        $(document).ready(function (){
-            var qteup = 0
-            $("select").click(function (){
-                qteup = qteup + 1;
-                $("qtepp").load("update.php", {
-                    qteupNew : qteup
-                });
+        function updcart(id){
+            console.log(id)
+            $.ajax({
+                url:"update.php",
+                method:"POST",
+                data:$("#frm"+id).serialize(),
+                success:function (){
+                    alert("ok")
+
+                }
             });
-        });
+        }
     </script>
 
 </head>
@@ -83,6 +86,7 @@ include('nav.php')
         while ($row = mysqli_fetch_array($result)){
             $id = $row["ID_FL"];
         ?>
+<form id="frm<?php echo $id ?>">
         <div class="produits">
             <div style="display : flex;align-items : center;">
                 <a href="productdetail.php?id=<?php echo $id ?>"><img class="imgprod" src="<?= $row["Image"]; ?>"></a>
@@ -91,7 +95,9 @@ include('nav.php')
             <div class="header_sous">
 
     <div class="qtepp">
-        <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice()" value="<?= $row['quantite'];?>">
+        <input type="hidden" name="idproduct" value="<?php echo $id ?>">
+        <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice();updcart(<?php echo $id ?>)"
+                value="<?= $row['quantite'];?>" onkeyup="updcart(<?php echo $id ?>)">
             <option selected disabled hidden>
                 <?= $row['quantite'];?>
 
@@ -104,6 +110,7 @@ include('nav.php')
 
         </select>
     </div>
+</form>
                 <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
                 <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
 
@@ -144,3 +151,6 @@ include('nav.php')
 </html>
 
 
+<?php
+include "footer.php";
+?>
