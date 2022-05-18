@@ -1,12 +1,12 @@
 .all{
-    border: 1px solid black;
+   
 
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: #8fed8fac;
 }
 
 
@@ -36,8 +36,9 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
-    border: 1px solid black;
+
     border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
 .imgprod{
@@ -90,11 +91,14 @@
     .inpute{
         width: 100%;
     }
-    .produits{
+
+
+   
+
+    .header_sous{
         display : block;
-        position: relative;
-        text-align: center;
-        align-items: center;
+        
+        
     }
 }
 

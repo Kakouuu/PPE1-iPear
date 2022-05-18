@@ -1,6 +1,5 @@
 <?php
 require_once "db.php";
-
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
@@ -35,6 +34,19 @@ if(isset($_POST['idprod'])){
     <title>Panier</title>
 
 
+    <script>
+        //JQuery code
+        $(document).ready(function (){
+            var qteup = 0
+            $("select").click(function (){
+                qteup = qteup + 1;
+                $("qtepp").load("update.php", {
+                    qteupNew : qteup
+                });
+            });
+        });
+    </script>
+
 </head>
 <body onload="totalPrice()">
 
@@ -52,7 +64,7 @@ include('nav.php')
 
 
     <div class="all">
-        <div class="header">
+        <!-- <div class="header">
 
             <div class="nom">Nom du produit</div>
 
@@ -62,8 +74,8 @@ include('nav.php')
                 <div>Total</div>
                 <div>Supprimer le pannier</div>
             </div>
-        </div>
-<hr>
+        </div> -->
+
 
         <?php
         $a = 0;
@@ -111,7 +123,7 @@ include('nav.php')
             $a += 1;
             ?>
         </div>
-            <hr>
+            
             <?php
         }
         ?>

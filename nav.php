@@ -12,22 +12,31 @@
 <?php
 
 require_once "db.php";
-$sqla = 'SELECT * FROM `utilisateurs` where `ID_user`=' . $_SESSION['ID'];
-$resulta = mysqli_query($mysqli, $sqla);
 
-   while (($row = mysqli_fetch_array($resulta))){
+if (isset($_SESSION['ID'])) {
 
-    $prenom = $row["Prenom"];
-   }
+    $sqla = 'SELECT * FROM `utilisateurs` where `ID_user`=' . $_SESSION['ID'];
+    $resulta = mysqli_query($mysqli, $sqla);
+
+    while (($row = mysqli_fetch_array($resulta))) {
+
+        $prenom = $row["Prenom"];
+    }
 
 
 ?>
+
+
 
 
 <div class="welcome">Bonjour <?= $prenom; ?> !</div>
 
 
 
+<?php
+}
+
+?>
 
 
 
@@ -83,9 +92,24 @@ $resulta = mysqli_query($mysqli, $sqla);
 
             <a href="test.php" class="item"><i class="fa-solid fa-basket-shopping"></i></a>
 
-            <a href="login.php" class="log">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+            <a href="login.php" class="log" id="co">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+           
+
+            <li class="user"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
+            <ul class="user_sous">
+                <li><a class="user_container" onclick='supprim()' id="cache">Deconnexion</a></li>
+                <li><a href="pagelegume.php?id=Fruits Noyaux" title="" class="user_container">Profil</a></li>
 
     </span>
+
+    <script>
+function supprim() {
+    document.getElementById('cache').value = 1;
+    console.log(document.getElementById('cache').value);
+    window.location.replace("index.php");
+}
+    </script>
+
 
 
     <script>
@@ -165,6 +189,21 @@ $resulta = mysqli_query($mysqli, $sqla);
         </ul>
 
 </ul>
+
+<?php 
+if(isset($_SESSION['ID'])){
+    ?>
+    <script>
+    document.getElementById('co').style.display = 'none';
+    document.getElementById('profil').style.display = 'block';
+    </script>
+
+<?php
+}
+
+?>
+
+
 
 <script src="app.js"></script>
 

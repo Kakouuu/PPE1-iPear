@@ -731,6 +731,7 @@ body {
 }
 
 
+
 .pdp_info {
     background-color: #333333;
     display: flex;
@@ -762,7 +763,7 @@ a:link {
     list-style: none;
     color: white;
     padding: 5px;
-
+    
 }
 
 
@@ -792,7 +793,71 @@ a {
 
 .welcome{
     width: 100%;
-    background: #444444; 
+    background: #444444;
     color: white;
     padding: 5px;
 }
+
+
+.profile{
+    color : white;
+    padding: 8px;
+    display: none;
+}
+
+.user{
+    position : relative;
+    list-style-type: none;
+}
+
+.user:hover{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.user_sous{
+    list-style-type: none;
+    position: absolute;
+    top: 32px;
+    left: -110px;
+    width: 500px;
+    max-height: 0px;
+    /* Pour cacher le sous menu */
+    overflow: hidden;
+    /* Pour cacher le contenu du sous menu */
+    transition: max-height 0.25s ease;
+    /* transition appliquée sur la propriété max-height */
+    background-color: #4d4d4d;
+    width: 140px;
+    padding: 0;
+    margin: 5px;
+}
+
+.user_sous>li{
+    border-bottom : 1px solid white;
+    justify-content: center;
+    padding: 5px;
+}
+
+.user:hover > .user_sous {
+    max-height: 400px;
+
+
+    /* Pour afficher le menu après le "hover" */
+}
+
+.user_container{
+    cursor: pointer;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
