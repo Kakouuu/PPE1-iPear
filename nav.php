@@ -12,13 +12,16 @@
 <?php
 
 require_once "db.php";
-$sqla = 'SELECT * FROM `utilisateurs` where `ID_user`=' . $_SESSION['ID'];
-$resulta = mysqli_query($mysqli, $sqla);
 
-   while (($row = mysqli_fetch_array($resulta))){
+if (isset($_SESSION['ID'])) {
 
-    $prenom = $row["Prenom"];
-   }
+    $sqla = 'SELECT * FROM `utilisateurs` where `ID_user`=' . $_SESSION['ID'];
+    $resulta = mysqli_query($mysqli, $sqla);
+
+    while (($row = mysqli_fetch_array($resulta))) {
+
+        $prenom = $row["Prenom"];
+    }
 
 
 ?>
@@ -26,7 +29,9 @@ $resulta = mysqli_query($mysqli, $sqla);
 
 <div class="welcome">Bonjour <?= $prenom; ?> !</div>
 
-
+<?php
+}
+?>
 
 
 
