@@ -96,7 +96,7 @@ if (isset($_SESSION['ID'])) {
             <a href="login.php" class="log" id="co">Connexion <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
            
 
-            <li class="user"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
+            <li class="user" id="profil"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
             <ul class="user_sous">
                 <li><a class="user_container" onclick='supprim()' id="cache">Deconnexion</a></li>
                 <li><a href="pagelegume.php?id=Fruits Noyaux" title="" class="user_container">Profil</a></li>

@@ -730,6 +730,10 @@ a {
     padding: 5px;
 }
 
+#profil{
+    display: none;
+}
+
 
 .profile{
     color : white;
