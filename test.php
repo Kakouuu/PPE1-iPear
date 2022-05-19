@@ -37,14 +37,13 @@ if(isset($_POST['idprod'])){
 
     <script>
         function updcart(id){
-            console.log(id)
+
             $.ajax({
                 url:"update.php",
                 method:"POST",
                 data:$("#frm"+id).serialize(),
-                success:function (){
-                    alert("ok")
-
+                success:function (text){
+                    console.log(text)
                 }
             });
         }
