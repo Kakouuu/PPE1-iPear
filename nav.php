@@ -37,6 +37,7 @@ if (isset($_SESSION['ID'])) {
 <?php
 }
 
+
 ?>
 
 
@@ -98,18 +99,15 @@ if (isset($_SESSION['ID'])) {
 
             <li class="user" id="profil"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
             <ul class="user_sous">
-                <li><a class="user_container" onclick='supprim()' id="cache">Deconnexion</a></li>
                 <li><a href="pagelegume.php?id=Fruits Noyaux" title="" class="user_container">Profil</a></li>
+
+                <li><a class="user_container" href="suppression.php">Deconnexion</a></li>
+    
+
 
     </span>
 
-    <script>
-function supprim() {
-    document.getElementById('cache').value = 1;
-    console.log(document.getElementById('cache').value);
-    window.location.replace("index.php");
-}
-    </script>
+  
 
 
 
@@ -202,9 +200,15 @@ if(isset($_SESSION['ID'])){
 <?php
 }
 
+
+
+  
+
 ?>
 
 
-
+<form method="post" action="suppression.php" id="form">
+       <input type="hidden" id="cache" name="cache"/>
+    </form>
 <script src="app.js"></script>
 
