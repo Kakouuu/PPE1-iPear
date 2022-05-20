@@ -92,7 +92,7 @@ include('nav.php')
             <?= $row["Nom"]; ?></div>
 
             <div class="header_sous">
-
+                <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
     <div class="qtepp">
         <input type="hidden" name="idproduct" value="<?php echo $id ?>">
         <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice();updcart(<?php echo $id ?>)"
@@ -110,7 +110,7 @@ include('nav.php')
         </select>
     </div>
 </form>
-                <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
+
                 <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
 
 

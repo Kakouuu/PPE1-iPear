@@ -134,8 +134,9 @@
     position: relative;
     width: 100px;
     left: 55px;
-
+    outline: none;
 }
+
 
 .trash{
     margin-left: 40px;
