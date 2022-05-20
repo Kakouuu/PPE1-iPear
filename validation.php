@@ -60,7 +60,7 @@ include('nav.php')
 <br> <br><br>
 <div style="margin-left : 100px; margin-right : 100px;">
 
-<h1 style="border-bottom : 1px solid black; padding-bottom:8px;">Panier</h1>
+<h1 style="border-bottom : 1px solid black; padding-bottom:8px; width : 500px;">Panier</h1>
 <br>
 
 
@@ -139,7 +139,7 @@ include('nav.php')
 <br>
         <div class="bas">
             <a href="index.php"><div class="retour">Retour à l'accueil</div></a>
-                <div class="commande"><a href="validation.php"> Validation</a></div>
+                <div class="commande">Validation</div>
         </div>
         
 </div>
