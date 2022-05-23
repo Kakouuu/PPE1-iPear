@@ -32,7 +32,10 @@
             <input type="text" id="adresse" name="poste" placeholder="Adresse de livraison">
             <br>
             <br>
-            <input type="password" id="mdp" name="mdp" placeholder="Mot de passe" style="margin-left : 25px"><i class="fa-solid fa-eye" style="margin : 5px;" onclick='montrer()'></i>
+            <input type="password" id="mdp" name="mdp" placeholder="Mot de passe" style="margin-left : 28px"><i class="fa-solid fa-eye" style="margin : 5px;" onclick='montrer()'></i>
+            <br>
+            <br>
+            <input type="password" id="mdp2" name="mdp" placeholder="Confirmation mot de passe">
             <br>
             <br>
             <input type="submit"  onclick="valid()"  value="S'inscrire">
@@ -114,6 +117,15 @@ function montrer(){
   }
 }
 
+function mdpvalid(){
+    let a = document.getElementById('mdp').value;
+    let b = document.getElementById('mdp2').value;
+    if (a !== b){
+ concole.log('mdp incorrect');
+ event.preventDefault()
+    }else
+    
+}
 
 
         

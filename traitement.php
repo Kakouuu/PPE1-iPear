@@ -15,6 +15,8 @@ $result = mysqli_query($mysqli, $sql);
 /*var_dump($search);*/
 ?>
 
+<h1 style="margin : 20px;">Voici le résultat pour : <span><?php echo $search ?> </span></h1> 
+    
 <div class="article">
 
 <?php
