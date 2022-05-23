@@ -5,6 +5,8 @@
     <title>Inscription</title>
     <link href="newuser.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
 <div class="register">
@@ -33,6 +35,9 @@
             <br>
             <br>
             <input type="password" id="mdp" name="mdp" placeholder="Mot de passe" style="margin-left : 25px"><i class="fa-solid fa-eye" style="margin : 5px;" onclick='montrer()'></i>
+            <br>
+            <br>
+            <div class="g-recaptcha" data-sitekey="6LfE_xAgAAAAAOd9_sb-Ae66Ks7ujLy7XSLZ8x1-"></div>
             <br>
             <br>
             <input type="submit"  onclick="valid()"  value="S'inscrire">
