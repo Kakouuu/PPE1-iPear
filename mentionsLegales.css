@@ -1,0 +1,26 @@
+.policy{
+    display: block;
+    font-weight: 400px;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.6em;
+}
+
+.txte{
+    max-width: 80ch;
+    margin: 100px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.policy_title{
+    padding-bottom : 50px;
+    font-size: 20px;
+    font-family: Maven Pro, sans-serif
+}
+
+p{
+    padding-bottom: 40px;
+}

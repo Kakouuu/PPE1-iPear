@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="cover" onclick="aplus(this)">
+    <div class="popup" >
+        Article ajouté <img src="img\check.png" alt="SALUT" style="width: 35px; margin-left: 20px;">
+    </div>
+</div>
+    <script>
+       function aplus(element){
+           console.log(element);
+        element.style.opacity = '0';
+        element.addEventListener('transitionend', () => element.remove());
+       }
+    </script>
+</body>
+</html>
