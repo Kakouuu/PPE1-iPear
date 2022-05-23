@@ -1,0 +1,167 @@
+.photo_product{
+    grid-area: photo;
+}
+
+.img_product{
+    width:500px;
+    height:500px;
+    object-fit: cover;
+    position:relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+
+.nom_part{
+    grid-area: nom;
+    text-align: left;
+}
+
+
+
+.prix_part{
+    grid-area: prix;
+    text-align: left;
+    margin-bottom: 0px;
+
+}
+
+.qte_part{
+    grid-area: qte;
+    text-align: left;
+    width: 40px;
+}
+
+.qte_incr{
+    grid-area: qteincr;
+    text-align: left;
+    display: flex;
+}
+
+.quantite{
+    font-size: 15px;
+    color: black;
+}
+
+.prix {
+    font-size: 50px;
+    color: #26ad63;
+}
+.add_to_cart{
+    grid-area: panier;
+    font-size: medium;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border-color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #26ad63;
+}
+
+.addcart{
+    grid-area: panier;
+    text-align: left;
+}
+
+
+.spec_part{
+    grid-area: spec;
+    font-size: medium;
+    text-align: left;
+}
+
+
+.desc_part{
+    grid-area: description;
+    max-width: 800px;
+}
+
+.description_prod{
+    font-size: large;
+    overflow: visible;
+    color:black;
+    text-align: justify;
+}
+
+
+.title_info{
+    margin-top: 10px;
+    text-align: left;
+    color:black;
+    text-decoration: underline;
+}
+
+
+
+.grid_info_prod{
+    grid-area:info;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+    'nom'
+    'prix'
+    'qte'
+    'qteincr'
+    'description'
+    'spec'
+    'panier';
+}
+
+.grid-container_product{
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'photo info info';
+    gap: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 40% 60%;
+}
+
+.grid-container_product > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.product {
+    width: 30%;
+    margin: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .grid-container_product{
+        display : block !important;
+    }
+}
+
+.btn{
+    cursor: pointer;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #26ad63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.qteprod{
+    width: 150px;
+    height: 30px;
+}
