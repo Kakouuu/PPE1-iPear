@@ -17,7 +17,7 @@ require_once "db.php";
 <body>
 
 <?php
-if ($_SESSION['errore'] == 4) {
+if (isset($_SESSION['errore']) && $_SESSION['errore'] == 4) {
     ?>
     <div class="cover" onclick="aplus(this)">
         <div class="popupe">
