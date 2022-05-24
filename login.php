@@ -28,7 +28,7 @@
             <a href="newuser.php">Créer un compte</a>
             <br>
             <br>
-            <input type="submit" value="Envoyer">
+            <input type="submit" name="submit" value="SUBMIT">
         </div>
     </form>
 

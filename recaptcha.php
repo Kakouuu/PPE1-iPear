@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     function post_captcha($user_response) {
         $fields_string = '';
         $fields = array(
-            'secret' => '6LcbkxAgAAAAADwozx4HYg-yiLirXbxPnX1vHtaZ',
+            'secret' => '6LfE_xAgAAAAANiDHnSrytLnaOKv3DH9naRILjF8',
             'response' => $user_response
         );
         foreach($fields as $key=>$value)
@@ -33,8 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // If CAPTCHA is successfully completed...
 
         // Paste mail function or whatever else you want to happen here!
-        header("location: index.php");
+        echo '<br><p>CAPTCHA was completed successfully!</p><br>';
     }
-} ?>
+} else { ?>
 
-
+<?php } ?>
