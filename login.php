@@ -1,17 +1,80 @@
+<?php
+require_once "db.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Connexion</title>
     <link href="longin.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
-    <a href="index.php">Accueil</a>
     <script src="app.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
+    <link rel="stylesheet" href="longin.css">
 
 </head>
 <body>
 
+<?php
+if(isset($_SESSION['error']) && $_SESSION['error'] != 0){
+?>
+ <div class="cover" onclick="aplus(this)">
+     <?php
+     if ($_SESSION['error'] == 1){
+     ?>
+    <div class="popup" >
+        Une erreur s'est produite, veuillez réssayer  <img src="img\cross.png" alt="" style="width: 35px; margin-right: 15px;">
+    </div>
+     <?php
+     }
+     if ($_SESSION['error'] == 2){
+     ?>
+     <div class="popup" >
+         Veuillez compléter le captcha <img src="img\cross.png" alt="" style="width: 35px; margin-right: 15px;">
+     </div>
+    <?php
+     }
+     if ($_SESSION['error'] == 3){
+     ?>
+     <div class="popup" >
+         Veuillez remplir tous les champs <img src="img\cross.png" alt="" style="width: 35px; margin-right: 15px;">
+     </div>
+        <?php
+     }
+     if ($_SESSION['error'] == 4){
+         ?>
+         <div class="popup" >
+             Mot de passe incorrect <img src="img\cross.png" alt="" style="width: 35px; margin-right: 15px;">
+         </div>
+         <?php
+     }
+     if ($_SESSION['error'] == 5){
+     ?>
+     <div class="popup" >
+         Email ou mot de passe incorrect <img src="img\cross.png" alt="" style="width: 35px; margin-right: 15px;">
+     </div>
+     <?php
+     }
+     ?>
+
+
+</div>
+
+    <script>
+       function aplus(element){
+        element.style.opacity = '0';
+        element.addEventListener('transitionend', () => element.remove());
+
+       }
+    </script>
+
+<?php
+    $_SESSION['error'] = 0;
+}
+?>
 
 <div class="block-inscription">
     <form action="traitementlogin.php" method="post">
@@ -28,7 +91,7 @@
             <a href="newuser.php">Créer un compte</a>
             <br>
             <br>
-            <input type="submit" name="submit" value="SUBMIT">
+            <input type="submit" name="submit" value="Se connecter">
         </div>
     </form>
 
