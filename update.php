@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+require_once "db.php";
 if(isset($_POST['idproduct'],$_POST['qteprod'])) {
 
     $idprodct = $_POST['idproduct'];
