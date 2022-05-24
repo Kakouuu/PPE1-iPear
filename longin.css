@@ -24,8 +24,8 @@ form input[type="email"], input[type="password"], input[type="submit"]{
 
 .popup{
     width: 300px;
-    border: 1px solid green;
-    height: 60px ;
+    border: 1px solid black;
+    height: 70px ;
     border-radius: 10px;
     background-color: red;
     color: white;
@@ -42,6 +42,30 @@ form input[type="email"], input[type="password"], input[type="submit"]{
     right: 10px;
     top : 60px;
     z-index: 1000;
+    padding-left: 5px;
+}
+
+.popupe{
+    width: 300px;
+    border: 1px solid green;
+    height: 70px ;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    justify-content: center;
+    display : flex;
+    align-items: center;
+    font-size: 20px;
+    -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    right: 10px;
+    top : 60px;
+    z-index: 1000;
+    padding-left: 5px;
 }
 
 .cover{
@@ -76,4 +100,9 @@ form input[type="email"], input[type="password"], input[type="submit"]{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.g-recaptcha{
+    position: relative;
+    left: 20px;
 }

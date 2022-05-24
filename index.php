@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
 
-    <title>YouPoire</title>
+    <title>Pears</title>
 </head>
 <body>
 

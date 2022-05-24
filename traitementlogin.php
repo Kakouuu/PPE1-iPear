@@ -7,8 +7,7 @@ require_once "db.php";
 <head>
     <title>Traitement login</title>
     <meta charset="utf8"/>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcQbxAgAAAAAFfNzP4EERKUigaw30Cbgi_FcPcI"></script>
-    </script>
+    <link rel="stylesheet" href="longin.css">
 </head>
 <body>
 

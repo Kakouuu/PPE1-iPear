@@ -47,7 +47,7 @@
 
 .prix {
     font-size: 50px;
-    color: #26ad63;
+    color: black;
 }
 .add_to_cart{
     grid-area: panier;
@@ -62,7 +62,7 @@
     height: 50px;
     padding: 15px;
     margin-top: 10px;
-    background-color: #26ad63;
+    background-color: black;
 }
 
 .addcart{
