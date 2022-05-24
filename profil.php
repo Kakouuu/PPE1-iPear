@@ -27,35 +27,35 @@ require_once "db.php";
 
     ?>
 
-    <div class="profil">
-        <h1>Informations</h1>
+<div class="profil">
+    <h1>Informations</h1>
 
-        <form>
-            <div class="infor1">
-                Nom :
-                <input value="<?= $row["Nom"]; ?>" style="margin-left: 5px"> <br>
-            </div>
-
-            <div class="infor1">
-                Prenom :
-                <input value="<?= $row["Prenom"]; ?>"style="margin-left: 5px"> <br>
-            </div>
-            <div class="infor1">
-                Mail :
-                <input value="<?= $row["Mail"]; ?>"style="margin-left: 5px"> <br>
-            </div>
-            <div class="infor1">
-                Téléphone :
-                <input value="<?= $row["NumTel"]; ?>"style="margin-left: 5px"> <br>
-            </div>
-            <div class="infor1">
-                Adresse :
-                <input value="<?= $row["Adresse"]; ?>"style="margin-left: 5px"> <br>
-            </div>
-
-            <button class="edit">Modifier mes informations</button>
-        </form>
+    <form>
+    <div class="infor1">
+        Nom :
+        <input value="<?= $row["Nom"]; ?>" style="margin-left: 5px"> <br>
     </div>
+
+    <div class="infor1">
+        Prenom :
+        <input value="<?= $row["Prenom"]; ?>"style="margin-left: 5px"> <br>
+    </div>
+    <div class="infor1">
+        Mail :
+        <input value="<?= $row["Mail"]; ?>"style="margin-left: 5px"> <br>
+    </div>
+    <div class="infor1">
+        Téléphone :
+        <input value="<?= $row["NumTel"]; ?>"style="margin-left: 5px"> <br>
+    </div>
+    <div class="infor1">
+        Adresse :
+        <input value="<?= $row["Adresse"]; ?>"style="margin-left: 5px"> <br>
+    </div>
+
+    <button class="edit">Modifier mes informations</button>
+    </form>
+</div>
     </body>
     </html>
 
