@@ -19,8 +19,9 @@
 }
 
 .edit{
+    color: white;
     margin-top: 20px;
-    background-color: darkgray;
+    background-color: black;
     width: 200px;
     height: 30px;
     border-radius: 10px;
