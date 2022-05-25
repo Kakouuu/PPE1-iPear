@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
 
                 $sujet = "Activation de votre compte";
                 $message = "Bonjour ".$Prenom."<br>";
-                $message.="Voici le lien pour activer votre compte: <a href='https://www.youtube.com/'>Cliquer ici</a>";
+                $message.="Voici le lien pour activer votre compte: <a href='http://localhost/Stage/login.php'>Cliquer ici</a>";
 
                 sendmail($sujet,$message,'youpoire75005@gmail.com');
                 header("location: login.php");
