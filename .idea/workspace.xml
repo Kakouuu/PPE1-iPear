@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="PHPMAILER">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addpanier.php" beforeDir="false" afterPath="$PROJECT_DIR$/addpanier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newuser.css" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profilupdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/profilupdate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recaptcha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recherche.php" beforeDir="false" afterPath="$PROJECT_DIR$/recherche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traitementnewuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementnewuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +76,7 @@
       <workItem from="1653303963691" duration="331000" />
       <workItem from="1653304313846" duration="12412000" />
       <workItem from="1653376197749" duration="22616000" />
-      <workItem from="1653462301241" duration="8075000" />
+      <workItem from="1653462301241" duration="9424000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>

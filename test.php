@@ -1,6 +1,8 @@
 <?php
 require_once "db.php";
-session_start();
+
+include('nav.php');
+
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
@@ -53,9 +55,7 @@ if(isset($_POST['idprod'])){
 </head>
 <body onload="totalPrice()">
 
-<?php
-include('nav.php')
-?>
+
 
 
 <br> <br><br>
@@ -114,10 +114,6 @@ include('nav.php')
 
                 <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
 
-
-                <?php
-               // $sql = 'UPDATE `panier` SET quantite = '.$row["quantite"].' WHERE ID_user = '.$_SESSION['ID_user'].' and ID_FL =' . $_POST['idprod'];
-                ?>
 
                 <div class="trash">
                     <form action="test.php" method="POST">

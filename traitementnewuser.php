@@ -1,6 +1,7 @@
 <?php
 require_once "db.php";
 include_once ('phpmailer.php');
+session_start();
 ?>
 
 <!DOCTYPE html>
