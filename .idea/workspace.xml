@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="UPDATE CODE">
+      <change beforePath="$PROJECT_DIR$/newuser.css" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/PHPMailer/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29Yxk7oGMp4ssncciMvieIhayQf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="" />
+      <created>1653303961790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653303961790</updated>
+      <workItem from="1653303963691" duration="331000" />
+      <workItem from="1653304313846" duration="12412000" />
+      <workItem from="1653376197749" duration="22616000" />
+      <workItem from="1653462301241" duration="9506000" />
+      <workItem from="1653472377060" duration="301000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1653304329180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653304329180</updated>
+    </task>
+    <task id="LOCAL-00002" summary="captcha">
+      <created>1653316608132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653316608132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="captcha">
+      <created>1653379802736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653379802736</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Working Captcha">
+      <created>1653382511926</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653382511926</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Working Captcha inscription">
+      <created>1653397950691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653397950691</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Working Captcha inscription">
+      <created>1653398492309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653398492309</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Working Captcha inscription">
+      <created>1653399025798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653399025798</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Profil update">
+      <created>1653403000930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653403000930</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Profil update">
+      <created>1653403640921</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653403640922</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Profil update V1">
+      <created>1653463767305</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653463767305</updated>
+    </task>
+    <task id="LOCAL-00011" summary="PHPMAILER">
+      <created>1653469613253</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653469613253</updated>
+    </task>
+    <task id="LOCAL-00012" summary="UPDATE CODE">
+      <created>1653472302260</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472302260</updated>
+    </task>
+    <task id="LOCAL-00013" summary="UPDATE CODE">
+      <created>1653472390175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472390175</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UPDATE CODE">
+      <created>1653472517949</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472517949</updated>
+    </task>
+    <task id="LOCAL-00015" summary="UPDATE CODE">
+      <created>1653472614431</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472614431</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <MESSAGE value="captcha" />
+    <MESSAGE value="Working Captcha" />
+    <MESSAGE value="Working Captcha inscription" />
+    <MESSAGE value="Profil update" />
+    <MESSAGE value="Profil update V1" />
+    <MESSAGE value="PHPMAILER" />
+    <MESSAGE value="UPDATE CODE" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE CODE" />
+  </component>
+</project>

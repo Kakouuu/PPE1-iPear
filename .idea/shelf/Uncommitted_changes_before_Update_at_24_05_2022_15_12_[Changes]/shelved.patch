@@ -1,0 +1,42 @@
+Index: profil.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/profil.css b/profil.css
+new file mode 100644
+--- /dev/null	(date 1653384474088)
++++ b/profil.css	(date 1653384474088)
+@@ -0,0 +1,32 @@
++.profil{
++    position: relative;
++    padding: 10px;
++    margin: 20px;
++    left: 500px;
++    width: 500px;
++}
++
++.infor1{
++    margin: 8px;
++    height: 35px;
++    width: 350px;
++    display: flex;
++    justify-content: center;
++    background-color: white;
++    align-items: center;
++    border-radius: 10px;
++    box-shadow: 0 5px 10px rgba(0,0,0,.2);
++}
++
++.edit{
++    margin-top: 20px;
++    background-color: lightgray;
++    width: 200px;
++    height: 30px;
++    border-radius: 10px;
++    margin-left: 80px;
++    opacity: 0.8;
++}
++.edit:hover{
++    opacity: 1;
++}

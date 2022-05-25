@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+session_start();
 
 if(isset($_POST['nom'],$_POST['prenom'],$_POST['mail'],$_POST['phone'],$_POST['adresse'])) {
 

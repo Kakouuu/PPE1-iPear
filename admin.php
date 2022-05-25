@@ -13,7 +13,6 @@
 
 include "nav.php";
 
-
 if ($_SESSION['ID'] != 6) {?>
     <script>window.location.replace("index.php");</script> <?php
 }
