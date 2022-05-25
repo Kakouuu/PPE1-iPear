@@ -21,7 +21,7 @@ require_once "db.php";
     <?php
     include('nav.php');
 
-    $sql = "select * from utilisateurs";
+    $sql = "select * from utilisateurs WHERE ID_user =" . $_SESSION['ID'];
     $result = mysqli_query($mysqli, $sql);
     $row = mysqli_fetch_array($result);
 
@@ -56,14 +56,12 @@ require_once "db.php";
         </form>
 
     <script>
-
         function valid() {
             var a = document.getElementById('email').value;
             var prenom = document.getElementById('prenom').value;
             var nom = document.getElementById('nomdefamille').value;
             var numero = document.getElementById('number').value;
             var addre = document.getElementById('adresse').value;
-            var mdp = document.getElementById('mdp').value;
             console.log("salut")
 
 
@@ -93,12 +91,6 @@ require_once "db.php";
                 document.getElementById('number').style.border = '1px green solid';
             } else {
                 document.getElementById('number').style.border = '1px red solid';
-                event.preventDefault()
-            }
-            if (mdp.search(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/) == 0) {
-                document.getElementById('mdp').style.border = '1px green solid';
-            } else {
-                document.getElementById('mdp').style.border = '1px red solid';
                 event.preventDefault()
             }
             if (addre == "") {
