@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+include_once ('phpmailer.php');
 ?>
 
 <!DOCTYPE html>
@@ -50,9 +51,13 @@ if (isset($_POST['submit'])) {
 
                 $sql = "insert into utilisateurs (Nom, Prenom, Mail, NumTel, Mdp, Adresse) " .
                     " values('" . $Nom . "', '" .  $Prenom . "','" .  $Mail  . "','" .  $NumTel . "','" . $hashed_password . "','" . $Adresse . "')";
-
                 mysqli_query($mysqli, $sql);
 
+                $sujet = "Activation de votre compte";
+                $message = "Bonjour ".$Prenom."<br>";
+                $message.="Voici le lien pour activer votre compte: <a href='https://www.youtube.com/'>Cliquer ici</a>";
+
+                sendmail($sujet,$message,'youpoire75005@gmail.com');
                 header("location: login.php");
 
 
