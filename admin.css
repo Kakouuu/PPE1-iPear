@@ -1,0 +1,16 @@
+.all{
+    margin: 100px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.2);
+    width: 400px;
+
+    padding: 4px;
+}
+
+.prout{
+    display : flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}

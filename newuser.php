@@ -95,11 +95,11 @@
                 document.getElementById('mdp').style.border = '1px red solid';
                 event.preventDefault()
             }
-            if (addre == ""){
+            if (addre.search('([0-9a-zA-Z,\. ]*)') == 0){
+                document.getElementById('adresse').style.border = '1px green solid';
+            }else{
                 document.getElementById('adresse').style.border = '1px red solid';
                 event.preventDefault()
-            }else{
-                document.getElementById('adresse').style.border = '1px green solid';
             }
 
 
