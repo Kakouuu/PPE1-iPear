@@ -19,10 +19,6 @@ include "nav.php";
 ?>
 
 
-<?php
-
-
-?>
 <h1>Page administrateur</h1>
 <hr>
 
