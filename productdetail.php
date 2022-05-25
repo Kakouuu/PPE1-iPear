@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+
 ?>
 
 <link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
@@ -11,6 +12,8 @@ include "nav.php"
 ?>
 <?php 
 if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
+    
+
 ?>
  <div class="cover" onclick="aplus(this)">
     <div class="popup" >

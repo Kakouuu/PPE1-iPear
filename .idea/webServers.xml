@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1413c27c-6198-4575-b69b-1da025b64438" name="php_deployment" url="http://localhost/ppe_git/YoupoireV2">
+        <fileTransfer mountedRoot="C:\wamp64\www\ppe_git\YoupoireV2" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
