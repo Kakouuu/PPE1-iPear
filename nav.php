@@ -91,7 +91,7 @@ if (isset($_SESSION['ID'])) {
 
             <li class="user" id="profil"><a href="#" title="" class="type"><i class="fa-solid fa-user" name="deconnecte"></i></a>
             <ul class="user_sous">
-                <li><a href="#" title="" class="user_container">Profil</a></li>
+                <li><a href="profil.php" title="" class="user_container">Profil</a></li>
 
                 <li><a class="user_container" href="suppression.php">Deconnexion</a></li>
     

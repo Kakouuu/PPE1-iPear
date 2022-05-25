@@ -1,0 +1,33 @@
+.profil{
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    left: 500px;
+    width: 500px;
+}
+
+.infor1{
+    margin: 8px;
+    height: 35px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.edit{
+    margin-top: 20px;
+    background-color: darkgray;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 80px;
+    opacity: 0.8;
+}
+
+.edit:hover{
+    opacity: 1;
+}

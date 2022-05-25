@@ -8,14 +8,17 @@
 <body>
 
 <?php
-session_start();
 
-if ($_SESSION['ID'] != 6) {
-    header("Location: index.php");
-}
 
 
 include "nav.php";
+
+
+if ($_SESSION['ID'] != 6) {?>
+    <script>window.location.replace("index.php");</script> <?php
+}
+
+
 ?>
 
 
