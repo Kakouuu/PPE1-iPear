@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="UPDATE CODE">
-      <change beforePath="$PROJECT_DIR$/img/bannière.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fruitover1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/legover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newuser.css" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/PHPMailer/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -67,6 +66,7 @@
       <workItem from="1653304313846" duration="12412000" />
       <workItem from="1653376197749" duration="22616000" />
       <workItem from="1653462301241" duration="9506000" />
+      <workItem from="1653472377060" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>
@@ -152,7 +152,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653472302260</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UPDATE CODE">
+      <created>1653472390175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472390175</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UPDATE CODE">
+      <created>1653472517949</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472517949</updated>
+    </task>
+    <task id="LOCAL-00015" summary="UPDATE CODE">
+      <created>1653472614431</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653472614431</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
