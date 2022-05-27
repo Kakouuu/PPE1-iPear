@@ -1,0 +1,12 @@
+.all{
+    display : flex;
+    background : red;
+}
+
+.salut{
+    position : relative;
+    border : 1px solid black;
+    padding: 10px;
+
+  
+}

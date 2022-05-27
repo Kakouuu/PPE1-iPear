@@ -30,8 +30,6 @@ if ($_SESSION['ID'] != 6) {?>
     <a href="/" class="prout"><div>Ajouter un produit</div></a>
     <a href="/" class="prout"><div>Modifier un produit</div></a>
     <a href="gerer.php" class="prout"><div>Gérer les utilisateurs</div></a>
-    mkz,fmze,
-
     
 </div>
 
