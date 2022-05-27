@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="Add session start">
+    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="Patch 25/05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHPMailer/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHPMailer/get_oauth_token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profil.css" beforeDir="false" afterPath="$PROJECT_DIR$/profil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recherche.php" beforeDir="false" afterPath="$PROJECT_DIR$/recherche.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,8 @@
       <workItem from="1653376197749" duration="22616000" />
       <workItem from="1653462301241" duration="9506000" />
       <workItem from="1653472377060" duration="2722000" />
-      <workItem from="1653480726466" duration="7287000" />
+      <workItem from="1653480726466" duration="7934000" />
+      <workItem from="1653654164882" duration="2124000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653481285517</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Patch 25/05">
+      <created>1653488645389</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653488645389</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
     <MESSAGE value="PHPMAILER" />
     <MESSAGE value="UPDATE CODE" />
     <MESSAGE value="Add session start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add session start" />
+    <MESSAGE value="Patch 25/05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Patch 25/05" />
   </component>
 </project>

@@ -84,7 +84,7 @@ if (isset($_SESSION['errore']) && $_SESSION['errore'] != 0) {
             <br>
             <div class="g-recaptcha" data-sitekey="6LfE_xAgAAAAAOd9_sb-Ae66Ks7ujLy7XSLZ8x1-"></div>
             <br>
-p            <a href="login.php">J'ai déjà un compte</a>
+            <a href="login.php">J'ai déjà un compte</a>
             <br>
             <br>
             <a href="index.php">Retourner à l'accueil</a>
