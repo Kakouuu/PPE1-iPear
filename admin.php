@@ -27,8 +27,8 @@ if ($_SESSION['ID'] != 6) {?>
 
 
 <div class="all">
-    <a href="/" class="prout"><div>Ajouter un produit</div></a>
-    <a href="/" class="prout"><div>Modifier un produit</div></a>
+    <a href="ajouterprod.php" class="prout"><div>Ajouter un produit</div></a>
+    <a href="modify.php" class="prout"><div>Modifier un produit</div></a>
     <a href="gerer.php" class="prout"><div>Gérer les utilisateurs</div></a>
 
     
