@@ -1,8 +1,6 @@
 <?php
 require_once "db.php";
 session_start();
-
-
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
 }
@@ -21,7 +19,7 @@ if(isset($_POST['idprod'])){
     header("Location: test.php");
    
 }
-include('nav.php');
+
 ?>
 
 
@@ -55,18 +53,22 @@ include('nav.php');
 </head>
 <body onload="totalPrice()">
 
+<?php
+include('nav.php')
+?>
+
 
 
 
 <br> <br><br>
 <div style="margin-left : 100px; margin-right : 100px;">
 
-<h1 style="border-bottom : 1px solid black; padding-bottom:8px;">Panier</h1>
-<br>
+    <h1 style="border-bottom : 1px solid black; padding-bottom:8px; width : 500px;">Panier</h1>
+    <br>
 
 
 
-    <div class="all">
+    <div class="all2">
         <!-- <div class="header">
 
             <div class="nom">Nom du produit</div>
@@ -79,69 +81,91 @@ include('nav.php');
             </div>
         </div> -->
 
+        <div>
+            <?php
+            $a = 0;
 
-        <?php
-        $a = 0;
-
-        while ($row = mysqli_fetch_array($result)){
+            while ($row = mysqli_fetch_array($result)){
             $id = $row["ID_PC"];
-        ?>
-<form id="frm<?php echo $id ?>">
-        <div class="produits">
-            <div style="display : flex;align-items : center;">
-                <a href="productdetail.php?id=<?php echo $id ?>"><img class="imgprod" src="<?= $row["Image"]; ?>"></a>
-            <?= $row["Nom"]; ?></div>
-
-            <div class="header_sous">
-                <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
-    <div class="qtepp">
-        <input type="hidden" name="idproduct" value="<?php echo $id ?>">
-        <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice();updcart(<?php echo $id ?>)"
-                value="<?= $row['quantite'];?>" onkeyup="updcart(<?php echo $id ?>)">
-            <option selected disabled hidden>
-                <?= $row['quantite'];?>
-
-            </option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-
-        </select>
-    </div>
-</form>
-
-                <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
-
-
-                <div class="trash">
-                    <form action="test.php" method="POST">
-                    <input type="hidden" name="idprod" value="<?=$row['ID_PC'];?>">
-                        <button type="submit" name="suppr"><i class="fa-solid fa-trash-can"></i></button>
-                    </form>
-                </div>
-            </div>
-            <?php
-            $a += 1;
             ?>
+            <form id="frm<?php echo $id ?>">
+                <div class="produits2">
+                    <div style="display : flex;align-items : center;">
+                        <a href="productdetail.php?id=<?php echo $id ?>"><img class="imgprod" src="<?= $row["Image"]; ?>"></a>
+                        <?= $row["Nom"]; ?></div>
+
+                    <div class="header_sous">
+                        <div class="PU" id="<?= $row["Prix"]; ?>" value="<?= $row["Prix"]; ?>"><?= $row["Prix"]; ?> €</div>
+                        <div class="qtepp">
+                            <input type="hidden" name="idproduct" value="<?php echo $id ?>">
+                            <select class="qteprod" name="qteprod" id="myNumber" onchange="number(<?=$a?>);totalPrice();updcart(<?php echo $id ?>)"
+                                    value="<?= $row['quantite'];?>" onkeyup="updcart(<?php echo $id ?>)">
+                                <option selected disabled hidden>
+                                    <?= $row['quantite'];?>
+
+                                </option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+
+                            </select>
+                        </div>
+            </form>
+
+            <input class="toto" id="<?=$row["quantite"]*$row["Prix"] ?>" name="tata" value="<?= $row['quantite']*$row["Prix"] ?> €" readonly />
+
+
+
+
+            <div class="trash">
+                <form action="test.php" method="POST">
+                    <input type="hidden" name="idprod" value="<?=$row['ID_PC'];?>">
+                    <button type="submit" name="suppr"><i class="fa-solid fa-trash-can"></i></button>
+                </form>
+            </div>
         </div>
-            
-            <?php
-        }
+        <?php
+        $a += 1;
         ?>
-        
     </div>
-        <div class="total" id="totale" name="totalprice"></div>
-<br>
-        <div class="bas">
-            <a href="index.php"><div class="retour">Retour à l'accueil</div></a>
-                <div class="commande"><a href="validation.php"> Validation</a></div>
-        </div>
-        
+
+    <?php
+    }
+    ?>
+
+
 </div>
 
-<br>
+<div class="recap">
+
+
+    <h1>Récapitulatif</h1>
+    <br>
+    <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
+    <br>
+    <div><input type="text" placeholder="code promo"></div>
+    <br>
+    <div> <span class="total"> Frais de port : </span></div>
+    <hr>
+    <div> <span class="total"> Total : </span></div>
+    <hr>
+
+    <button class="payer">Paiement</button>
+
+
+</div>
+
+
+<br><br>
+
+
+
+</div>
+
+</div>
+
 
 </body>
 </html>
