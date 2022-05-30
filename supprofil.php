@@ -1,6 +1,6 @@
 <?php
 require_once "db.php";
-session_start();
+
 
 if(isset($_POST['iduser'],$_POST['nom'],$_POST['prenom'],$_POST['mail'],$_POST['phone'],$_POST['adresse'])) {
 
@@ -13,18 +13,17 @@ if(isset($_POST['iduser'],$_POST['nom'],$_POST['prenom'],$_POST['mail'],$_POST['
 
 }
 
-if(isset($_POST['submit'])){
-    $sql = "UPDATE `utilisateurs` SET Nom = '$Nom', Prenom = '$Prenom', Mail = '$Mail', NumTel = '$Phone',  Adresse = '$Adresse' WHERE ID_user = '" . $_SESSION['ID'] . "'";
+if(isset($_POST['supp'])){
+    $sql = "DELETE FROM `panier` WHERE `ID_user` = '$id';";
+    $sqlg = "DELETE FROM `utilisateurs` WHERE `ID_user` = '$id';";
     mysqli_query($mysqli, $sql);
-    header("location: gerer.php");
+    mysqli_query($mysqli, $sqlg);
+    header('Location: gerer.php');
 }    
 
 
 // if(isse($_POST['suppr'])){
-//     $sqlm = " DELETE FROM `utilisateurs` WHERE `utilisateurs`.`ID_user` = ";
+//     
 // }
-
-
-
 
 ?>

@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+session_start();
 include "nav.php";
 ?>
 
@@ -53,10 +54,9 @@ while ($row = mysqli_fetch_array($result)){
 
     
         <!-- <input type="submit" name="suppr" onclick="valid()" value="Supprimer"> -->
-        <a href="gerer.php" type="submit" name="suppr" onclick="valid()" value="Supprimer">Supprimer</a>
+        <input type="submit" placeholder="supprimer" name="supp">
     </div>
 </form> 
-
 
 
 

@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
+session_start();
 
-include('nav.php');
 
 if(!isset($_SESSION['ID'])){
     header("Location:login.php");
@@ -21,7 +21,7 @@ if(isset($_POST['idprod'])){
     header("Location: test.php");
    
 }
-
+include('nav.php');
 ?>
 
 
