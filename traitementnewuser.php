@@ -49,6 +49,7 @@ if (isset($_POST['submit'])) {
             // If the reCAPTCHA API response is valid
             if ($responseData->success) {
                 $_SESSION['errore'] = 4;
+                $code = ( uniqid('', true));
 
                 $sql = "insert into utilisateurs (Nom, Prenom, Mail, NumTel, Mdp, Adresse) " .
                     " values('" . $Nom . "', '" .  $Prenom . "','" .  $Mail  . "','" .  $NumTel . "','" . $hashed_password . "','" . $Adresse . "')";

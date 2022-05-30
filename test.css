@@ -1,6 +1,11 @@
-.all{
-   
+.all2{
+    display: flex;
+    justify-content: center;
+}
 
+
+.all2>div{
+    margin: 7px;
 }
 
 .header{
@@ -49,12 +54,7 @@
 }
 
 .total{
-    position: relative;
-    left: 80%;
-    margin: 5px;
     padding: 5px;
-    background-color: lightblue;
-    width: 150px;
 }
 
 
@@ -93,12 +93,12 @@
     }
 
 
-   
+
 
     .header_sous{
         display : block;
-        
-        
+
+
     }
 }
 
@@ -152,5 +152,37 @@
 
 
 
+.produits2{
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 710px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
 
+.recap{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 400px;
+}
 
+.payer{
+    background-color: transparent;
+    padding: 10px;
+    width: 200px;
+    border-radius: 70px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+
+.recap>div{
+    display : flex;
+    justify-content: space-between;
+    margin: 5px;
+
+    width: 350px;
+}

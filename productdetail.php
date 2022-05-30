@@ -53,7 +53,7 @@ $row = mysqli_fetch_array($result);
         </div>
 
         <span class="prix_part">
-            <span class="prix"><?= $row["Prix"]; ?> € </span><span class="quantite"> / <?= $row["Quantite"]; ?> </span>
+            <span class="prix"><?= $row["Prix"]; ?> € </span><span class="quantite"> </span>
         </span>
 
         <div class="qte_part">

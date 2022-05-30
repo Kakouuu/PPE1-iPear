@@ -13,6 +13,10 @@ session_start();
 
 </head>
 <body>
+<?php
+//$code = ( uniqid('', true));
+//print_r($code)
+?>
 
 <?php
 if (isset($_SESSION['errore']) && $_SESSION['errore'] != 0) {
