@@ -61,7 +61,7 @@ include('nav.php')
 
 
 <br> <br><br>
-<div style="margin-left : 100px; margin-right : 100px;">
+<div style="margin-left : 100px; margin-right : 100px; padding-bottom: 50px;">
 
     <h1 style="border-bottom : 1px solid black; padding-bottom:8px; width : 500px;">Panier</h1>
     <br>
