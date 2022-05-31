@@ -18,11 +18,34 @@ session_start();
 <body>
 
 <?php
-if (isset($_SESSION['errore']) && $_SESSION['errore'] == 4) {
+if (isset($_SESSION['cle'])) {
     ?>
     <div class="cover" onclick="aplus(this)">
         <div class="popupe">
-            Inscription réussie <img src="img\check.png" alt="" style="width: 35px; margin-left: 15px;">
+            Inscription validée <img src="img\check.png" alt="" style="width: 35px; margin-left: 15px;">
+        </div>
+
+    </div>
+    <script>
+        function aplus(element) {
+            element.style.opacity = '0';
+            element.addEventListener('transitionend', () => element.remove());
+
+        }
+    </script>
+    <?php
+    unset($_SESSION['cle']);
+}
+?>
+
+
+
+<?php
+if (isset($_SESSION['errore']) && $_SESSION['errore'] == 4) {
+    ?>
+    <div class="cover" onclick="aplus(this)">
+        <div class="popupe" style="height: 80px ; padding: 5px">
+            Rendez vous sur votre boîte mail pour valider votre inscription <img src="img\check.png" alt="" style="width: 35px; margin-left: 15px;">
         </div>
 
     </div>
