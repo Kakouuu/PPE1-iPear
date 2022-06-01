@@ -48,7 +48,6 @@ if (isset($_POST['submit'])) {
 
             // If the reCAPTCHA API response is valid
             if ($responseData->success) {
-                $_SESSION['errore'] = 4;
                 $cle = (uniqid('', true));
                 $sql = "insert into utilisateurs (Nom, Prenom, Mail, NumTel, Mdp, Adresse, Token, TokenStatus) " .
                     " values('" . $Nom . "', '" . $Prenom . "','" . $Mail . "','" . $NumTel . "','" . $hashed_password . "','" . $Adresse . "','" . $cle . "', 0)";
@@ -64,7 +63,8 @@ if (isset($_POST['submit'])) {
                     $message = "Bonjour " . $Prenom . "<br>";
                     $message .= "Voici le lien pour activer votre compte: <a href='http://localhost/Stage/verif.php?id=" . $_SESSION['id'] . "&cle=" . $cle . "'>Cliquez ici</a>";
 
-                    //sendmail($sujet, $message, "youpoire75005@gmail.com");
+                    sendmail($sujet, $message, "youpoire75005@gmail.com");
+                    $_SESSION['errore'] = 4;
                     header("location: login.php");
                 } else {
                     echo "utilisateur introuvable";

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="PATCH 30/05">
-      <change afterPath="$PROJECT_DIR$/verif.php" afterDir="false" />
+    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="Token update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelegume.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagelegume.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traitementnewuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementnewuser.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ppe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,7 +79,8 @@
       <workItem from="1653480726466" duration="7934000" />
       <workItem from="1653654164882" duration="4985000" />
       <workItem from="1653895294063" duration="21567000" />
-      <workItem from="1653980858881" duration="6940000" />
+      <workItem from="1653980858881" duration="10401000" />
+      <workItem from="1654067278795" duration="3362000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>
@@ -231,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653904441870</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Token update">
+      <created>1653998844305</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1653998844305</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +267,7 @@
     <MESSAGE value="Patch 25/05" />
     <MESSAGE value="PATCH" />
     <MESSAGE value="PATCH 30/05" />
-    <option name="LAST_COMMIT_MESSAGE" value="PATCH 30/05" />
+    <MESSAGE value="Token update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Token update" />
   </component>
 </project>
