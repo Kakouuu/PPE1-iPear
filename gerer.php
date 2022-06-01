@@ -54,7 +54,7 @@ while ($row = mysqli_fetch_array($result)){
 
     
         <!-- <input type="submit" name="suppr" onclick="valid()" value="Supprimer"> -->
-        <input type="submit" placeholder="supprimer" name="supp">
+        <input type="submit" placeholder="supprimer" name="supp" value="supprimer">
     </div>
 </form> 
 

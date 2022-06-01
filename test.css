@@ -186,3 +186,13 @@
 
     width: 350px;
 }
+
+
+.promo{
+    display: flex;
+    position: absolute;
+    padding: 0px;
+    width: 38px;
+    left: 87%;
+  
+}

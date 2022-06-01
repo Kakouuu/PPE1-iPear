@@ -3,6 +3,16 @@ session_start();
 include "nav.php";
 require_once "db.php";
 ?>
+<?php
+
+if ($_SESSION['ID'] != 6) {?>
+    <script>window.location.replace("index.php");</script> <?php
+}
+
+
+?>
+
+
 <br>
 <H2>Gestion des produits :</H2>
 <br>

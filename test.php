@@ -69,17 +69,7 @@ include('nav.php')
 
 
     <div class="all2">
-        <!-- <div class="header">
-
-            <div class="nom">Nom du produit</div>
-
-            <div class="header_sous">   
-                <div>Quantité</div>
-                <div>Prix unitaire</div>
-                <div>Total</div>
-                <div>Supprimer le pannier</div>
-            </div>
-        </div> -->
+        
 
         <div>
             <?php
@@ -145,14 +135,17 @@ include('nav.php')
     <br>
     <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
     <br>
-    <div><input type="text" placeholder="code promo"></div>
+    <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
+        <span class="promo"> -15%</span>
     <br>
-    <div> <span class="total"> Frais de port : </span></div>
+    <div> <span class="total"> Frais de port : </span> 4.30 €</div>
     <hr>
     <div> <span class="total"> Total : </span></div>
     <hr>
 
     <button class="payer">Paiement</button>
+
+   
 
 
 </div>
