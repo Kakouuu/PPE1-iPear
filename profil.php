@@ -24,8 +24,8 @@ session_start();
     if (isset($_SESSION['profil']) && $_SESSION['profil'] == 1) {
         ?>
         <div class="cover" onclick="aplus(this)">
-            <div class="popup" style="width: 350px;top: 100px">
-                Informations modifiés avec succés <img src="img\check.png" alt=""
+            <div class="popup" style="width: 450px;top: 100px">
+                Vos informations ont été modifié avec succés <img src="img\check.png" alt=""
                                                              style="width: 35px; margin: 15px;">
             </div>
         </div>
