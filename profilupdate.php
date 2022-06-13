@@ -16,6 +16,7 @@ if(isset($_POST['nom'],$_POST['prenom'],$_POST['mail'],$_POST['phone'],$_POST['a
 if(isset($_POST['submit'])){
     $sql = "UPDATE `utilisateurs` SET Nom = '$Nom', Prenom = '$Prenom', Mail = '$Mail', NumTel = '$Phone',  Adresse = '$Adresse' WHERE ID_user = '" . $_SESSION['ID'] . "'";
     mysqli_query($mysqli, $sql);
+    $_SESSION['profil'] = 1;
     header("location: profil.php");
 }    
 

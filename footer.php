@@ -50,8 +50,8 @@
         </ul>
         <ul class="info2">
             <h1 style="color: white">Pears</h1>
-                <p class="infosite">Commandez les fruits et légumes d'exception de producteurs locaux. <br>
-                    Livraison en quelques heures, même le dimanche !</p>
+                <p class="infosite">Commandez nos ordinateurs et téléphones avec une qualité certifiée par nos experts. <br>
+                    Livraison en quelques jours, même le dimanche !</p>
         </ul>
     </section>
 

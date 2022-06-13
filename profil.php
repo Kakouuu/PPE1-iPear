@@ -14,10 +14,33 @@ session_start();
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="test.css">
         <link rel="stylesheet" href="profil.css">
+        <link rel="stylesheet" href="popup.css">
         <title>Profil</title>
 
 
     </head>
+
+    <?php
+    if (isset($_SESSION['profil']) && $_SESSION['profil'] == 1) {
+        ?>
+        <div class="cover" onclick="aplus(this)">
+            <div class="popup" style="width: 350px;top: 100px">
+                Informations modifiés avec succés <img src="img\check.png" alt=""
+                                                             style="width: 35px; margin: 15px;">
+            </div>
+        </div>
+        <script>
+            function aplus(element) {
+                element.style.opacity = '0';
+                element.addEventListener('transitionend', () => element.remove());
+
+            }
+        </script>
+
+        <?php
+        $_SESSION['profil'] = 0;
+    }
+    ?>
 
     <?php
     include('nav.php');

@@ -25,15 +25,13 @@ if ($_SESSION['ID'] != 6) {?>
 <hr>
 
 
-
+<div class="tout">
 <div class="all">
     <a href="ajouterprod.php" class="prout"><div>Ajouter un produit</div></a>
     <a href="modify.php" class="prout"><div>Modifier un produit</div></a>
     <a href="gerer.php" class="prout"><div>Gérer les utilisateurs</div></a>
-
-    
 </div>
-
+</div>
 
 <?php
 include "footer.php";

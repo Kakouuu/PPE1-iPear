@@ -6,14 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="Token update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementnewuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementnewuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gerer.css" beforeDir="false" afterPath="$PROJECT_DIR$/gerer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gerer.php" beforeDir="false" afterPath="$PROJECT_DIR$/gerer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profilupdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/profilupdate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supprofil.php" beforeDir="false" afterPath="$PROJECT_DIR$/supprofil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false">
     <pharConfigPath>$PROJECT_DIR$/PHPMailer/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -54,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -80,7 +88,11 @@
       <workItem from="1653654164882" duration="4985000" />
       <workItem from="1653895294063" duration="21567000" />
       <workItem from="1653980858881" duration="10401000" />
-      <workItem from="1654067278795" duration="3362000" />
+      <workItem from="1654067278795" duration="6760000" />
+      <workItem from="1654243460519" duration="14000" />
+      <workItem from="1654247372611" duration="580000" />
+      <workItem from="1654263988094" duration="40000" />
+      <workItem from="1655121680244" duration="4332000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>
@@ -236,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653998844305</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Token update">
+      <created>1654074881981</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1654074881981</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

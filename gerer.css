@@ -1,3 +1,6 @@
+.allall{
+    margin: 20px;
+}
 .all{
     display : flex;
 }
@@ -9,3 +12,64 @@
 
   
 } */
+
+.infor1{
+    padding: 10px;
+}
+
+.popup{
+    width: 300px;
+    border: 1px solid red;
+    height: 70px ;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    display : flex;
+    align-items: center;
+    font-size: 20px;
+    -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    right: 10px;
+    top : 60px;
+    z-index: 1000;
+    padding-left: 5px;
+}
+
+.cover{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.popup:hover{
+    background-color: red;
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
