@@ -1,7 +1,7 @@
 <?php
 include "nav.php";
 ?>
-<link rel="stylesheet" href="mentionsLegales.css">
+<link rel="stylesheet" href="css/mentionsLegales.css">
 
 <body>
 <div class="txte">

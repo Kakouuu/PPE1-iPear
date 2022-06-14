@@ -32,7 +32,7 @@ if(isset($_POST['idprod'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="css/test.css">
     <title>Panier</title>
 
 

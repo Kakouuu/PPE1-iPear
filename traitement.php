@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="article.css">
+<link rel="stylesheet" href="css/article.css">
 
 <?php
 
@@ -9,7 +9,7 @@ include "nav.php";
 
 $search = $_GET['Rechercher'];
 
-$sql = "select * from fruitslegumes where  Nom like'" . $search . "%'";
+$sql = "select * from ordinateur where  Nom like'" . $search . "%'";
 $result = mysqli_query($mysqli, $sql);
 /*var_dump($search);*/
 ?>
@@ -18,7 +18,7 @@ $result = mysqli_query($mysqli, $sql);
 
 <?php
 while ($row = mysqli_fetch_array($result)){
-    $id = $row["ID_FL"];
+    $id = $row["ID_PC"];
 ?>
 
         <div class="articles">
@@ -26,10 +26,10 @@ while ($row = mysqli_fetch_array($result)){
             <div class="article_name">
                 <a href="productdetail.php?id=<?php echo $id ?>"><h1><?php echo $row['Nom']; ?></h1></a>
                 <p class="articles_provenance">
-                    Provenance : <?= $row["Provenance"]; ?></p>
+                    Expediteur : <?= $row["Expediteur"]; ?></p>
                 <p class="articles_achat">
-                    <?= $row["Prix"];?> € / <?= $row["Quantite"];?><br/><br/>
-                    <?= $row["Description"];?>
+                    <?= $row["Prix"];?> € <br/><br/>
+                    <?= $row["NomComplet"];?>
 
                 </p>
             </div>

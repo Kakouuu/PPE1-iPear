@@ -3,8 +3,8 @@ require_once "db.php";
 session_start();
 ?>
 
-<link rel="stylesheet" href="productdetail.css" xmlns="http://www.w3.org/1999/html">
-<link rel="stylesheet" href="popup.css">
+<link rel="stylesheet" href="css/productdetail.css" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="css/popup.css">
 
 <body>
 <?php

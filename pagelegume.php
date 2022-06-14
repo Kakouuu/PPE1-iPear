@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE  =edge">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
     <title> Légumes Fruits </title>
 

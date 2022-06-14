@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Panier</title>
-    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="css/panier.css">
 </head>
 <body>
 <div class="title">

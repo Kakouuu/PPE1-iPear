@@ -1,7 +1,7 @@
 <?php
 include "nav.php";
 ?>
-<link rel="stylesheet" href="confiden.css">
+<link rel="stylesheet" href="css/confiden.css">
 
 <body>
 <div class="txte">

@@ -3,6 +3,13 @@ session_start();
 include "nav.php";
 require_once "db.php";
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/modify.css">
+    <title>Modifier les produits</title>
+</head>
 <?php
 
 if ($_SESSION['ID'] != 6) {?>

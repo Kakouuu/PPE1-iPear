@@ -1,7 +1,7 @@
 <?php
 include "nav.php";
 ?>
-<link rel="stylesheet" href="condiVente.css">
+<link rel="stylesheet" href="css/condiVente.css">
 
 <body>
 <div class="txte">
