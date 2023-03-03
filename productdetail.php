@@ -5,30 +5,29 @@ session_start();
 
 <link rel="stylesheet" href="css/productdetail.css" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="css/popup.css">
-
 <body>
 <?php
 include "nav.php"
 ?>
-<?php 
-if(isset($_SESSION['valid']) && $_SESSION['valid'] == 1){
-    
+<?php
+if (isset($_SESSION['valid']) && $_SESSION['valid'] == 1) {
 
-?>
- <div class="cover" onclick="aplus(this)">
-    <div class="popup" >
-        Article ajouté <img src="img\check.png" alt="" style="width: 35px; margin-left: 20px;">
+
+    ?>
+    <div class="cover" onclick="aplus(this)">
+        <div class="popup">
+            Article ajouté <img src="img\check.png" alt="" style="width: 35px; margin-left: 20px;">
+        </div>
     </div>
-</div>
     <script>
-       function aplus(element){
-        element.style.opacity = '0';
-        element.addEventListener('transitionend', () => element.remove());
-        
-       }
+        function aplus(element) {
+            element.style.opacity = '0';
+            element.addEventListener('transitionend', () => element.remove());
+
+        }
     </script>
 
-<?php
+    <?php
     $_SESSION['valid'] = 0;
 }
 
@@ -55,7 +54,9 @@ $row = mysqli_fetch_array($result);
         <span class="prix_part">
             <span class="prix"><?= $row["Prix"]; ?> € </span><span class="quantite"> </span>
         </span>
+        <span class="rating_part">
 
+</span>
         <div class="qte_part">
             <h3><span class="title_info"> Quantité</h3>
         </div>
@@ -88,6 +89,7 @@ $row = mysqli_fetch_array($result);
 </div>
 </div>
 </div>
+
 
 </body>
 

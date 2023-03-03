@@ -26,9 +26,7 @@ if ($_SESSION['ID'] != 6) {?>
 
 <?php
 
-$sql = "SELECT * FROM `ordinateur` WHERE 1";
-mysqli_query($mysqli, $sql);
-
+$sql = "CALL `getPC`();";
 $result = mysqli_query($mysqli, $sql);
 
 while ($row = mysqli_fetch_array($result)) {

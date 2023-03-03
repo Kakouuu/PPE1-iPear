@@ -11,12 +11,11 @@
 
 session_start();
 
-include "nav.php";
-
-if ($_SESSION['ID'] != 6) {?>
-    <script>window.location.replace("index.php");</script> <?php
+if ($_SESSION['ID'] != 6) {
+    header("location: index.php");
 }
 
+include "nav.php";
 
 ?>
 

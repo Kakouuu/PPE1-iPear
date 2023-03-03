@@ -4,61 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="Update ADMIN">
-      <change afterPath="$PROJECT_DIR$/css/article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/condiVente.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/confiden.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/gerer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/legumes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/longin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/mentionsLegales.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/modify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/newuser.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/panier.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/productdetail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/profil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/admin.css" afterDir="false" />
+    <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="UPDATE CSS FILES">
+      <change afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/pate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addpanier.php" beforeDir="false" afterPath="$PROJECT_DIR$/addpanier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/condiVente.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/condiVente.php" beforeDir="false" afterPath="$PROJECT_DIR$/condiVente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confiden.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/confiden.php" beforeDir="false" afterPath="$PROJECT_DIR$/confiden.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gerer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/productdetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/productdetail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gerer.php" beforeDir="false" afterPath="$PROJECT_DIR$/gerer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/admin.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legumes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mentionsLegales.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mentionsLegales.php" beforeDir="false" afterPath="$PROJECT_DIR$/mentionsLegales.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/modify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newuser.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/newuser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagelegume.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagelegume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panier.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup.htm" beforeDir="false" afterPath="$PROJECT_DIR$/popup.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productdetail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup.htm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/productdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/productdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profil.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementlogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementlogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traitementnewuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementnewuser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -103,10 +74,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ppe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -137,7 +109,23 @@
       <workItem from="1654247372611" duration="580000" />
       <workItem from="1654263988094" duration="40000" />
       <workItem from="1655121680244" duration="9671000" />
-      <workItem from="1655190704752" duration="652000" />
+      <workItem from="1655190704752" duration="8690000" />
+      <workItem from="1655709297183" duration="5180000" />
+      <workItem from="1655735199961" duration="710000" />
+      <workItem from="1655796061662" duration="6675000" />
+      <workItem from="1655882547357" duration="14204000" />
+      <workItem from="1656314697469" duration="12113000" />
+      <workItem from="1656351492426" duration="4531000" />
+      <workItem from="1663334624104" duration="772000" />
+      <workItem from="1665656390087" duration="994000" />
+      <workItem from="1667485803026" duration="152000" />
+      <workItem from="1668790278699" duration="176000" />
+      <workItem from="1671904767897" duration="91000" />
+      <workItem from="1672993338454" duration="2363000" />
+      <workItem from="1675714462281" duration="62000" />
+      <workItem from="1675719227827" duration="185000" />
+      <workItem from="1677771744660" duration="20000" />
+      <workItem from="1677772353240" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>
@@ -314,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655126601024</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="UPDATE CSS FILES">
+      <created>1655191461650</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1655191461650</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +342,8 @@
     <MESSAGE value="PATCH 30/05" />
     <MESSAGE value="Token update" />
     <MESSAGE value="Update ADMIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ADMIN" />
+    <MESSAGE value="UPDATE CSS FILE" />
+    <MESSAGE value="UPDATE CSS FILES" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE CSS FILES" />
   </component>
 </project>

@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
                 }
 
             } else {
-                $_SESSION['errore'] = 1;
+                $_SESSION['errore']     = 1;
                 header("location: newuser.php");
             }
         } else {

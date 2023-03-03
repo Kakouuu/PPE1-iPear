@@ -36,7 +36,7 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1) {
 ?>
 <div class="allall">
 <?php
-$sql = "SELECT * FROM `utilisateurs` WHERE 1";
+$sql = "CALL `getUsers`();";
 $result = mysqli_query($mysqli, $sql);
 
 
