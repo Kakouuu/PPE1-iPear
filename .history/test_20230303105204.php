@@ -133,7 +133,7 @@ include('nav.php')
 
     <h1>Récapitulatif</h1>
     <br>
-    <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
+    <div><span class="total"> Sous-Total :</span> </div>
     <br>
     <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
         <span class="promo"> -15%</span>

@@ -140,7 +140,7 @@ include('nav.php')
     <br>
     <div> <span class="total"> Frais de port : </span> 4.30 €</div>
     <hr>
-    <div> <span class="total"> Total : </span> </div>
+    <div> <span class="total"> Total : </span></div>
     <hr>
 
     <button class="payer">Paiement</button>

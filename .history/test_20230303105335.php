@@ -122,7 +122,7 @@ include('nav.php')
     </div>
 
     <?php
-    }
+    
     ?>
 
 
