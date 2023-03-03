@@ -62,9 +62,9 @@ if (isset($_POST['idprod'])) {
     <?php
     if (mysqli_num_rows($result) == 0) {
     ?>
-        <div class="empty"> 
-            <div><h1>Votre panier est vide</h1></div>    
-            <div><a href="index.php"><button class="btn_empty">Retour à l'accueil</button></a></div>            
+        <div class="empty">     
+            <h1>Votre panier est vide</h1>
+            <a href="index.php"><button class="btn_empty">Retour à l'accueil</button></a>
         </div>
         
     <?php
@@ -136,50 +136,40 @@ if (isset($_POST['idprod'])) {
                         }
                     }
     ?>
-    
-    
-        </div>
-    
-        <div class="recap">
-    
-    
-            <h1>Récapitulatif</h1>
-            <br>
-            <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
-            <br>
-            <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
-            <div><span class="promo"></span>15 %</div>
-            <br>
-            <div> <span class="total"> Frais de port : </span> 4.30 €</div>
-            <hr>
-            <div> <span class="total"> Total : </span> 50.23 €</div>
-            <hr>
-    
-            <button class="payer">Paiement</button>
-    
-    
-    
-    
-        </div>
-    
-    
-        <br><br>
-    
-    
-    
-        </div>
-    
-        </div>
-    
-    
-    
-<?php
-    }
 
-    ?>
+
+</div>
+
+<div class="recap">
+
+
+    <h1>Récapitulatif</h1>
+    <br>
+    <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
+    <br>
+    <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
+        <span class="promo"> -15%</span>
+    <br>
+    <div> <span class="total"> Frais de port : </span> 4.30 €</div>
+    <hr>
+    <div> <span class="total"> Total : </span></div>
+    <hr>
+
+    <button class="payer">Paiement</button>
+
+   
+
+
+</div>
+
+
+<br><br>
 
 
 
+</div>
+
+</div>
 
 
 </body>

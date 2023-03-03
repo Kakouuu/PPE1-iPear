@@ -62,9 +62,9 @@ if (isset($_POST['idprod'])) {
     <?php
     if (mysqli_num_rows($result) == 0) {
     ?>
-        <div class="empty"> 
-            <div><h1>Votre panier est vide</h1></div>    
-            <div><a href="index.php"><button class="btn_empty">Retour à l'accueil</button></a></div>            
+        <div class="empty">     
+            <h1>Votre panier est vide</h1>
+            <a href="index.php"><button class="btn_empty">Retour à l'accueil</button></a>
         </div>
         
     <?php

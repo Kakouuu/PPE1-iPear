@@ -205,6 +205,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
-
+    margin-top: 10px;
 }
