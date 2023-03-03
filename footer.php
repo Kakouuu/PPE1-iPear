@@ -1,6 +1,7 @@
 <!-- Footer section --->
 
 <footer class="pdp">
+    <div>
     <a href="/">
         <i class="fa-brands fa-facebook"></i>
     </a>
@@ -13,7 +14,7 @@
     <a href="/">
         <i class="fa-brands fa-instagram"></i>
     </a>
-
+    </div>
     <hr>
 <div>
     <section class="pdp_info">
@@ -28,6 +29,7 @@
                 <i class="fa-solid fa-envelope"></i>
                 <input class="input-field" type="text" placeholder="Adresse Mail">
                 <button class="validate" type="submit">S'inscrire</button>
+            </div>
             </p>
         </ul>
         <ul class="info">

@@ -26,6 +26,8 @@ include "nav.php";
 
     $sql = "SELECT * FROM `ordinateur` WHERE Type = '" . $_GET['id'] . "'";
     $result = mysqli_query($mysqli, $sql);
+
+
     while ($row = mysqli_fetch_array($result)) {
         $id = $row["ID_PC"];
         ?>

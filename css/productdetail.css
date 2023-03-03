@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 .photo_product{
     grid-area: photo;
 }
@@ -19,13 +21,16 @@
     text-align: left;
 }
 
-
-
 .prix_part{
     grid-area: prix;
     text-align: left;
     margin-bottom: 0px;
 
+}
+
+.rating_part{
+    grid-area: rating;
+    text-align: left;
 }
 
 .qte_part{
@@ -107,11 +112,12 @@
     grid-template-areas:
     'nom'
     'prix'
+    'rating'
     'qte'
     'qteincr'
+    'panier'
     'description'
-    'spec'
-    'panier';
+    'spec';
 }
 
 .grid-container_product{
@@ -164,4 +170,83 @@
 .qteprod{
     width: 150px;
     height: 30px;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.comment{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.add_review{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.review_confirm{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    width: 160px;
+    height: 30px;
+    border-radius: 8px;
+    border-color: black;
+    opacity: 0.8;
+}
+
+.review_confirm:hover{
+    opacity: 1;
+}
+.espace_com{
+    display: block;
+    align-content: center;
+    justify-content: center;
+}
+
+.mb-3{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
 }

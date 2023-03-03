@@ -173,8 +173,8 @@ body {
     list-style-type: none;
     position: absolute;
     top: 32px;
-    left: -250px;
-    width: 500px;
+    left: -50px;
+    width: 200px;
     max-height: 0px;
     /* Pour cacher le sous menu */
     overflow: hidden;
@@ -183,6 +183,7 @@ body {
     /* transition appliquée sur la propriété max-height */
     padding: 0;
     margin: 5px 0;
+    border-radius: 10px;
 }
 
 .services:hover > .sous-menu {
@@ -635,7 +636,7 @@ body {
 
 .gauche{
     grid-area: 2 / 2 / 3 / 3;
-    background-image: url("img/pc-portable.png");
+    background-image: url("../img/pc-portable.png");
     background-size: 100%;
     background-position: center;
     padding: 100px;
@@ -689,7 +690,7 @@ body {
 
 .droite2 {
     grid-area: 1 / 2 / 2 / 3;
-    background-image: url("img/pc-portable3.png");
+    background-image: url("../img/pc-portable3.png");
     background-size: 100%;
     background-position: center;
     border-radius: 30px;
