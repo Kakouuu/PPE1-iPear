@@ -64,6 +64,8 @@ if (isset($_POST['idprod'])) {
     ?>
         <div class="empty"> 
             <div><h1>Votre panier est vide</h1></div>    
+            <!-- insert an image  -->
+            <div><img src="img/empty-basket.png" class="empty_basket" alt="empty"></div>
             <div><a href="index.php"><button class="btn_empty">Retour à l'accueil</button></a></div>            
         </div>
         
@@ -154,17 +156,12 @@ if (isset($_POST['idprod'])) {
             <hr>
             <div> <span class="total"> Total : </span> 50.23 €</div>
             <hr>
-    
-            <button class="payer">Paiement</button>
-    
-    
-    
+            <a class="verifpaiement" href=""><button class="payer">Paiement</button></a>
     
         </div>
     
     
         <br><br>
-    
     
     
         </div>

@@ -55,13 +55,13 @@ if (isset($_SESSION['ID'])) {
         <li class="services"><a href="#" title="" class="type">Ordinateur</a>
             <ul class="sous-menu">
                 <li><a href="pagelegume.php?id=Portable" title="" class="type_sous">PC Portable</a></li>
-                <li><a href="pagelegume.php?id=Portable" title="" class="type_sous">PC Fixe</a></li>
+                <li><a href="pagelegume.php?id=PC_Fixe" title="" class="type_sous">PC Fixe</a></li>
             </ul>
         <li class="services"><a href="#" title="" class="type">Telephone</a>
             <ul class="sous-menu">
-                <li><a href="pagelegume.php?id=Légume Fleurs" title="" class="type_sous">Samsung</a></li>
-                <li><a href="pagelegume.php?id=Légume Fleurs" title="" class="type_sous">Iphone</a></li>
-                <li><a href="pagelegume.php?id=Légume Fleurs" title="" class="type_sous">Huawei</a></li>
+                <li><a href="pagelegume.php?id=Samsung" title="" class="type_sous">Samsung</a></li>
+                <li><a href="pagelegume.php?id=Iphone" title="" class="type_sous">Iphone</a></li>
+                <li><a href="pagelegume.php?id=Huawei" title="" class="type_sous">Huawei</a></li>
             </ul>
         <li><a href="index.php" class="type">A propos</a></li>
     </ul>

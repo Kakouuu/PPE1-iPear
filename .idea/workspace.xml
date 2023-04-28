@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb5b321-a319-4d7a-b571-86585aeec22b" name="Changes" comment="UPDATE CSS FILES">
-      <change afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addpanier.php" beforeDir="false" afterPath="$PROJECT_DIR$/addpanier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/productdetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/productdetail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gerer.php" beforeDir="false" afterPath="$PROJECT_DIR$/gerer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/modify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelegume.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagelegume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/productdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/productdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementnewuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/traitementnewuser.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +105,7 @@
       <workItem from="1675719227827" duration="185000" />
       <workItem from="1677771744660" duration="20000" />
       <workItem from="1677772353240" duration="112000" />
+      <workItem from="1679486861478" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1653304329180</created>

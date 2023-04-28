@@ -8,8 +8,9 @@ session_start();
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE  =edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pageleg.css">
     <script src="https://kit.fontawesome.com/db2bf29261.js" crossorigin="anonymous"></script>
-    <title> Légumes Fruits </title>
+    <title> Ordinateur </title>
 
 </head>
 <body>
@@ -27,6 +28,17 @@ include "nav.php";
     $sql = "SELECT * FROM `ordinateur` WHERE Type = '" . $_GET['id'] . "'";
     $result = mysqli_query($mysqli, $sql);
 
+    if (mysqli_num_rows($result) == 0) {
+    ?>
+        <div class="empty_leg"> 
+            <div><h1>Pas d'articles disponibles</h1></div>    
+            <!--<div><img src="" class="empty_basket" alt="empty"></div> --> 
+            <div><a href="index.php"><button class="btn_empty_leg">Retourner à l'accueil</button></a></div>            
+        </div>
+        
+    <?php
+    }else{
+        
 
     while ($row = mysqli_fetch_array($result)) {
         $id = $row["ID_PC"];
@@ -51,6 +63,7 @@ include "nav.php";
         </div>
         <?php
     }
+}
     ?>
 </div>
 
