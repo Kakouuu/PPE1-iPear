@@ -150,7 +150,7 @@ if (isset($_POST['idprod'])) {
             <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
             <div><span class="promo"></span>15 %</div>
             <br>
-            <div> <span class="total"> Frais de port : </span> <span id="tooto"></span></div>
+            <div> <span class="total"> Frais de port : </span> <span id="tooto">FDFGSD</span></div>
             <hr>
             <div> <span class="total"> Total : </span id="toto"> 50.23 €</div>
             <hr>

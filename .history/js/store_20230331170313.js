@@ -20,7 +20,7 @@
             i++;
             document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €";
 
-        
+            document.getElementById('tooto').innerHTML = rendu.toFixed(2) + " €";
 
         
         }

@@ -18,11 +18,14 @@
             rendu += parseFloat(articles[i].value)
 
             i++;
-            document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €";
+            document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €"
 
-        
+            document.getElementById('tooto').innerHtml = rendu.toFixed(2) + " €"
 
-        
+            document.getElementById('toto').innerHtml = rendu.toFixed(2) + " €"
+
+
+
+
         }
     }
-
