@@ -35,10 +35,12 @@
         <ul class="info">
             <h1 style="color: white">Informations</h1>
             <li class="item2">
-                <a href="/" class="item2">A propos</a>
+                <!-- à changer -->
+                <a href="index.php" class="item2">A propos</a> 
             </li>
             <li class="item2">
-                <a href="/" class="item2">Nous contacter</a>
+                <!-- à changer -->
+                <a href="index.php" class="item2">Nous contacter</a>
             </li>
             <li class="item2">
                 <a href="mentionsLegales.php" class="item2">Mentions légales</a>

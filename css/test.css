@@ -172,6 +172,7 @@
     border: 1px solid black;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 .recap>div{
@@ -207,4 +208,10 @@
     align-items: center;
     margin: 100px;
 
+}
+
+.empty_basket{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
 }
