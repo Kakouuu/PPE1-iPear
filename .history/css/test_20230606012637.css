@@ -1,0 +1,243 @@
+.all2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.all2>div{
+    margin: 7px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8fed8fac;
+}
+
+
+.header_sous{
+    display : flex;
+    width: 50%;
+
+}
+
+.header, .produits{
+    margin: 5px;
+    padding: 3px;
+
+
+}
+
+.header_sous>div{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.produits{
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.imgprod{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-right: 13px;
+}
+
+.total{
+    padding: 5px;
+}
+
+
+
+
+.bas{
+    display : flex;
+
+}
+
+
+.retour{
+    border: 1px solid black;
+    opacity: 0.7;
+    border-radius: 3px;
+    padding: 5px;
+}
+.retour:hover{
+    opacity: 1;
+}
+
+.commande{
+    position: relative;
+    left : 71%;
+    border: 1px solid black;
+    opacity: 0.7;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #009900;
+}
+
+
+@media screen and (max-width : 1070px) {
+    .inpute{
+        width: 100%;
+    }
+
+
+
+
+    .header_sous{
+        display : block;
+
+
+    }
+}
+
+.btn{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: #50C878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.qteprod{
+    width: 150px;
+    height: 30px;
+}
+
+
+.toto{
+    border: none;
+    user-select: none;
+    text-decoration: none;
+    cursor: default;
+    position: relative;
+    width: 100px;
+    left: 55px;
+    outline: none;
+}
+
+
+.trash{
+    margin-left: 40px;
+}
+
+
+/* Validation panier */
+
+
+
+.produits2{
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 710px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.recap{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    height: 400px;
+}
+
+.payer{
+    background-color: transparent;
+    padding: 10px;
+    width: 200px;
+    border-radius: 70px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.recap>div{
+    display : flex;
+    justify-content: space-between;
+    margin: 5px;
+
+    width: 350px;
+}
+
+
+.promo{
+    display: flex;
+    margin-top: 5px;
+}
+
+.btn_empty{
+    cursor: pointer;
+    width: 180px;
+    height: 35px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+    margin: 5px
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.empty_basket{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    position : fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+}
+
+#check{
+    border-radius: 20px;
+    padding : 15px;
+    background: red;
+    height: 50%;
+    width: 50%;
+    display: none;
+    position: fixed;
+    
+}
+
+.aaaa {
+    
+    font-size: 45px;
+    font-weight: 600;
+    cursor : pointer;
+  }
