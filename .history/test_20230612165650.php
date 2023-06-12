@@ -155,14 +155,14 @@ if (isset($_POST['idprod'])) {
     
             <h1>Récapitulatif</h1>
             <br>
-            <div><span class="total"> Sous-Total :</span> <span class="toutal" id="totale" name="totalprice"></span></div>
+            <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
             <br>
             <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
             <div><span class="promo"></span>15 %</div>
             <br>
             <div> <span class="total"> Frais de port : </span> <span id="tooto"></span></div>
             <hr>
-            <div> <span class="total"> Total : </span id="totoo"> </div>
+            <div> <span class="total"> Total : </span id="toto"> </div>
             <hr>
             <a class="verifpaiement" onclick="checkOut()"><button class="payer">Paiement</button></a>
             

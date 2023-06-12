@@ -235,8 +235,10 @@
     background: white;
     border :solid 1px;
     height: 50%;
+    width: 50%;
     display: none;
     position: fixed;
+    flex-direction: row;
 }
 
 #checkout{
@@ -247,8 +249,6 @@
     font-size: 45px;
     font-weight: 600;
     cursor : pointer;
-    display: table-cell;
-    vertical-align: middle;
   }
 
   body{
@@ -257,6 +257,6 @@
 
   .right{
     position: relative;
-    display: flex;
+    flex-direction: flex;
     justify-content: space-between;
   }

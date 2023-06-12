@@ -19,13 +19,12 @@
 
             i++;
             document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €";
-            
 
         
 
         
         }
-    } 
+    }
 
     $(document).ready(function(){
 

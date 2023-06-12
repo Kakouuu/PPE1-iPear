@@ -37,6 +37,15 @@ if(document.getElementById("nom").value === ""){
         document.getElementById("nom").style.borderWidth = "2px";
 }
 
+if(document.getElementById("CVC").value === ""){
+    document.getElementById("CVC").style.borderColor = "red";
+    document.getElementById("CVC").style.borderWidth = "2px";
+    event.preventDefault()
+}else{
+    document.getElementById("CVC").style.borderColor = "green";
+        document.getElementById("CVC").style.borderWidth = "2px";
+}
+
 if(document.getElementById("date").value === ""){
     document.getElementById("date").style.borderColor = "red";
     document.getElementById("date").style.borderWidth = "2px";
@@ -46,14 +55,6 @@ if(document.getElementById("date").value === ""){
         document.getElementById("date").style.borderWidth = "2px";
 }
 
-if(document.getElementById("cvc").value === ""){
-    document.getElementById("cvc").style.borderColor = "red";
-    document.getElementById("cvc").style.borderWidth = "2px";
-    event.preventDefault()
-}else{
-    document.getElementById("cvc").style.borderColor = "green";
-        document.getElementById("cvc").style.borderWidth = "2px";
-}
 
 
 }

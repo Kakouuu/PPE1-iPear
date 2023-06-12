@@ -247,8 +247,7 @@
     font-size: 45px;
     font-weight: 600;
     cursor : pointer;
-    display: table-cell;
-    vertical-align: middle;
+    vertical-align: center;
   }
 
   body{

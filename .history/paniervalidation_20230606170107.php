@@ -13,11 +13,9 @@ require_once "db.php";
 $sql = "INSERT INTO `commande` (`ID_commande`, `ID_user`) VALUES (NULL, " . $_SESSION['ID'] . " )";
 $result = $mysqli->query($sql);
 
-// $sql = "SELECT DISTINCT C.ID_user, P.ID_PC, P.quantite, C.ID_Commande
+// $sql = "SELECT P.ID_user, P.ID_PC, P.quantite, C.ID_Commande
 // FROM panier AS P, commande AS C
-// WHERE C.ID_user = 16";
-
-// $sql = "INSERT into detailscommande (ID_DetailsCommande, Quantite, ID_commande, ID_PC) values()"
+// WHERE P.ID_user = 16";
 
 header("location: index.php");
 

@@ -46,14 +46,9 @@ if(document.getElementById("date").value === ""){
         document.getElementById("date").style.borderWidth = "2px";
 }
 
-if(document.getElementById("cvc").value === ""){
-    document.getElementById("cvc").style.borderColor = "red";
-    document.getElementById("cvc").style.borderWidth = "2px";
-    event.preventDefault()
-}else{
-    document.getElementById("cvc").style.borderColor = "green";
-        document.getElementById("cvc").style.borderWidth = "2px";
-}
+
+
+
 
 
 }

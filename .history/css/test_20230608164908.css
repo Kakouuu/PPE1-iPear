@@ -232,9 +232,9 @@
     z-index: 9999999;
     border-radius: 20px;
     padding : 15px;
-    background: white;
-    border :solid 1px;
+
     height: 50%;
+    width: 50%;
     display: none;
     position: fixed;
 }
@@ -244,19 +244,12 @@
 }
 
 .aaaa {
+    
     font-size: 45px;
     font-weight: 600;
     cursor : pointer;
-    display: table-cell;
-    vertical-align: middle;
   }
 
   body{
     min-height: 100vh;
-  }
-
-  .right{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
   }

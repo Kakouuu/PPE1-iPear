@@ -155,14 +155,14 @@ if (isset($_POST['idprod'])) {
     
             <h1>Récapitulatif</h1>
             <br>
-            <div><span class="total"> Sous-Total :</span> <span class="toutal" id="totale" name="totalprice"></span></div>
+            <div><span class="total"> Sous-Total :</span> <span class="total" id="totale" name="totalprice"></span></div>
             <br>
             <div><span class="total"> Code :</span> <input type="text" placeholder="code promo"></div>
             <div><span class="promo"></span>15 %</div>
             <br>
             <div> <span class="total"> Frais de port : </span> <span id="tooto"></span></div>
             <hr>
-            <div> <span class="total"> Total : </span id="totoo"> </div>
+            <div> <span class="total"> Total : </span id="toto"> 50.23 €</div>
             <hr>
             <a class="verifpaiement" onclick="checkOut()"><button class="payer">Paiement</button></a>
             
@@ -175,13 +175,10 @@ if (isset($_POST['idprod'])) {
 
     
         <div id="check">
-            <div class="right">
-                <span class="content"><h1>Paiement</h1></span>
-                <span class="aaaa" onclick="fermer()">&times;</span>
-            </div>
-            
+            <span class="aaaa" onclick="fermer()">&times;</span>
+            <div class="content"><h1>Paiement</h1></div>
 
-            <div style="font-weight : bold">Ajouter une carte</div>
+            <div>Ajouter une carte</div>
             
             <form action="paniervalidation.php" method="post">
 

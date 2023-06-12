@@ -19,14 +19,15 @@
 
             i++;
             document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €";
-            
 
         
 
         
         }
-    } 
+    }
 
+<<<<<<< HEAD
+=======
     $(document).ready(function(){
 
         $('.radio-group .radio').click(function(){
@@ -45,3 +46,4 @@
         });
         
         });
+>>>>>>> 0144968f9944d7f11fba68d8890e62efd373b823

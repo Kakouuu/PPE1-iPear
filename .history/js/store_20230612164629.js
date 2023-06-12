@@ -19,7 +19,6 @@
 
             i++;
             document.getElementById('totale').innerHTML = rendu.toFixed(2) + " €";
-            
 
         
 

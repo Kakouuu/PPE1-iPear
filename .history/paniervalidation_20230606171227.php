@@ -17,7 +17,7 @@ $result = $mysqli->query($sql);
 // FROM panier AS P, commande AS C
 // WHERE C.ID_user = 16";
 
-// $sql = "INSERT into detailscommande (ID_DetailsCommande, Quantite, ID_commande, ID_PC) values()"
+$sql = "INSERT into detailscommande (ID_DetailsCommande, Quantite, ID_commande, ID_PC) values()"
 
 header("location: index.php");
 
